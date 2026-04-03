@@ -17,6 +17,12 @@
       "title": "Speed / Distance / Time",
       "subject": "math",
       "summary": "Travel, average speed, relative speed, unit conversion."
+    },
+    {
+      "id": "mixture",
+      "title": "Mixture",
+      "subject": "math",
+      "summary": "Mixture, concentration, dilution, weighted average."
     }
   ],
   "physics": [
