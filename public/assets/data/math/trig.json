@@ -1,0 +1,80 @@
+{
+  "id": "trig",
+  "title": "Trigonometry (Elite)",
+  "subject": "math",
+  "summary": [
+    "Covers full spectrum from SAT → SPTG → GMAT → PAT1 level.",
+    "Includes identities, compound angle, radians, graphs, equations, and advanced transformations.",
+    "Focus on understanding patterns and reducing expressions, not memorizing blindly."
+  ],
+  "coreConcepts": [
+    "Right triangle definition of sin, cos, tan",
+    "Unit circle interpretation (x = cos θ, y = sin θ)",
+    "Pythagorean identities connect trig functions",
+    "Reciprocal relationships: sec, csc, cot",
+    "Compound angle formulas allow building new angles",
+    "Double and half angle extend trig relationships",
+    "Trig equations often have multiple solutions in intervals",
+    "Radians are natural units tied to circle geometry",
+    "Graphs describe periodic motion and transformations",
+    "Symmetry and periodicity are key for solving equations"
+  ],
+  "formulas": [
+    "sin²θ + cos²θ = 1",
+    "1 + tan²θ = sec²θ",
+    "1 + cot²θ = csc²θ",
+    "sin(A+B) = sinAcosB + cosAsinB",
+    "cos(A+B) = cosAcosB - sinAsinB",
+    "tan(A+B) = (tanA + tanB)/(1 - tanA tanB)",
+    "sin2θ = 2sinθcosθ",
+    "cos2θ = cos²θ - sin²θ",
+    "cos2θ = 2cos²θ - 1 = 1 - 2sin²θ",
+    "tan2θ = 2tanθ / (1 - tan²θ)",
+    "sin²(θ/2) = (1 - cosθ)/2",
+    "cos²(θ/2) = (1 + cosθ)/2",
+    "θ(rad) = θ° × π/180",
+    "Arc length = rθ",
+    "Sector area = (1/2)r²θ",
+    "Period(sin, cos) = 2π",
+    "Period(tan) = π"
+  ],
+
+  "sptgSet": [
+    { "question": "Find sin 30°", "answer": "1/2", "difficulty": "basic" },
+    { "question": "Find cos 45°", "answer": "√2/2", "difficulty": "basic" },
+    { "question": "Find tan 60°", "answer": "√3", "difficulty": "basic" },
+    { "question": "Convert 90° to radians", "answer": "π/2", "difficulty": "intermediate" },
+    { "question": "If sinθ = 3/5, find cosθ (θ acute)", "answer": "4/5", "difficulty": "intermediate" },
+    { "question": "Find sin 75°", "answer": "(√6+√2)/4", "difficulty": "intermediate" },
+    { "question": "Find tan 15°", "answer": "2 - √3", "difficulty": "advanced" },
+    { "question": "Solve sinθ = 1/2, 0–360°", "answer": "30°, 150°", "difficulty": "advanced" },
+    { "question": "Find amplitude of y = 3sinx", "answer": "3", "difficulty": "advanced" },
+    { "question": "Find period of y = cosx", "answer": "2π", "difficulty": "advanced" }
+  ],
+
+  "hardSet": [
+    { "question": "If tanθ = 5/12, find sinθ", "answer": "5/13", "difficulty": "hard" },
+    { "question": "Find cos 75°", "answer": "(√6 - √2)/4", "difficulty": "hard" },
+    { "question": "Solve cosθ = -1/2, 0–360°", "answer": "120°, 240°", "difficulty": "hard" },
+    { "question": "Find exact value of sin15°", "answer": "(√6 - √2)/4", "difficulty": "hard" },
+    { "question": "If sinθ = 4/5, find tanθ", "answer": "4/3", "difficulty": "hard" },
+    { "question": "Find sin2θ if sinθ=3/5, cosθ=4/5", "answer": "24/25", "difficulty": "hard" },
+    { "question": "Find cos2θ if cosθ=3/5", "answer": "-7/25", "difficulty": "hard" },
+    { "question": "Solve tanθ = 1, 0–360°", "answer": "45°, 225°", "difficulty": "hard" },
+    { "question": "Convert 300° to radians", "answer": "5π/3", "difficulty": "hard" },
+    { "question": "Arc length, r=5, θ=π/2", "answer": "5π/2", "difficulty": "hard" }
+  ],
+
+  "pat1Set": [
+    { "question": "Simplify: (1 - cos2θ)/(sin2θ)", "answer": "tanθ", "difficulty": "pat1" },
+    { "question": "Solve: 2sin²θ - 3sinθ +1 =0", "answer": "sinθ=1 or 1/2", "difficulty": "pat1" },
+    { "question": "Find max of 3sinx + 4cosx", "answer": "5", "difficulty": "pat1" },
+    { "question": "Solve: sinx + cosx = √2", "answer": "x=45°", "difficulty": "pat1" },
+    { "question": "Prove: (1 - tan²θ)/(1 + tan²θ) = cos2θ", "answer": "identity", "difficulty": "pat1" },
+    { "question": "Solve: cos2x = 1/2", "answer": "x = ±π/6 + kπ", "difficulty": "pat1" },
+    { "question": "Find sin3θ formula", "answer": "3sinθ - 4sin³θ", "difficulty": "pat1" },
+    { "question": "Solve: tanx + cotx = 2", "answer": "x=45°", "difficulty": "pat1" },
+    { "question": "Find period of y = sin(2x)", "answer": "π", "difficulty": "pat1" },
+    { "question": "Solve: sinx = cosx", "answer": "x=45°, 225°", "difficulty": "pat1" }
+  ]
+}

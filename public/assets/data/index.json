@@ -23,6 +23,12 @@
       "title": "Mixture",
       "subject": "math",
       "summary": "Mixture, concentration, dilution, weighted average."
+    },
+    {
+      "id": "trig",
+      "title": "Trigonometry",
+      "subject": "math",
+      "summary": "sin, cos, tan, special angles, and right-triangle applications."
     }
   ],
   "physics": [
