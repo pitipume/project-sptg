@@ -1,0 +1,51 @@
+{
+  "id": "kinematics",
+  "title": "Kinematics",
+  "subject": "physics",
+  "summary": [
+    "Kinematics describes motion without focusing on forces.",
+    "SPTG usually tests constant acceleration, free fall, and basic interpretation."
+  ],
+  "coreConcepts": [
+    "Acceleration is the rate of change of velocity.",
+    "For constant acceleration, standard motion equations apply.",
+    "Free fall is motion under gravity only."
+  ],
+  "derive": [
+    "a = (v - u) / t, so v = u + at",
+    "Average velocity = (u + v) / 2 for constant acceleration",
+    "s = average velocity × time",
+    "Combining equations gives s = ut + (1/2)at² and v² = u² + 2as"
+  ],
+  "formulas": [
+    "v = u + at",
+    "s = ut + (1/2)at²",
+    "v² = u² + 2as",
+    "average velocity = (u + v)/2",
+    "g ≈ 9.8 or 10 m/s²"
+  ],
+  "sptgSet": [
+    { "question": "An object starts from rest with acceleration 10 m/s² for 2 s. Find v.", "answer": "20 m/s", "difficulty": "basic" },
+    { "question": "A car moves at constant speed 10 m/s for 5 s. Find distance.", "answer": "50 m", "difficulty": "basic" },
+    { "question": "An object is dropped from rest. Which acceleration acts on it?", "answer": "g downward", "difficulty": "basic" },
+    { "question": "u = 5 m/s, a = 2 m/s², t = 4 s. Find v.", "answer": "13 m/s", "difficulty": "intermediate" },
+    { "question": "u = 0, a = 10 m/s², t = 3 s. Find s.", "answer": "45 m", "difficulty": "intermediate" },
+    { "question": "A body slows from 20 m/s to 0 in 4 s. Find acceleration.", "answer": "-5 m/s²", "difficulty": "intermediate" },
+    { "question": "u = 10 m/s, a = 2 m/s², s = 24 m. Find v.", "answer": "14 m/s", "difficulty": "advanced" },
+    { "question": "An object is thrown upward at 20 m/s. Using g = 10 m/s², find time to highest point.", "answer": "2 s", "difficulty": "advanced" },
+    { "question": "A train accelerates from 0 to 30 m/s in 10 s. Find average velocity.", "answer": "15 m/s", "difficulty": "advanced" },
+    { "question": "A particle moves with u = 3 m/s, a = 4 m/s², t = 2 s. Find s.", "answer": "14 m", "difficulty": "advanced" }
+  ],
+  "hardSet": [
+    { "question": "A car accelerates from 10 m/s to 30 m/s over 100 m. Find acceleration.", "answer": "4 m/s²", "difficulty": "hard" },
+    { "question": "A body moves with u = 20 m/s and decelerates at 2 m/s². Find stopping distance.", "answer": "100 m", "difficulty": "hard" },
+    { "question": "A particle moves 5 s with u = 4 m/s and a = 2 m/s². Find final velocity and distance.", "answer": "v = 14 m/s, s = 45 m", "difficulty": "hard" },
+    { "question": "An object is thrown upward at 30 m/s. Find max height using g = 10 m/s².", "answer": "45 m", "difficulty": "hard" },
+    { "question": "A car covers first half of distance at 20 m/s and second half at 30 m/s. Is average speed 25 m/s?", "answer": "No, it is 24 m/s", "difficulty": "hard" },
+    { "question": "A body starts from rest and covers 80 m in 4 s. Find acceleration.", "answer": "10 m/s²", "difficulty": "hard" },
+    { "question": "u = 15 m/s, v = 5 m/s, a = -2 m/s². Find time and distance.", "answer": "t = 5 s, s = 50 m", "difficulty": "hard" },
+    { "question": "A stone is dropped and reaches the ground in 3 s. Find height with g = 10 m/s².", "answer": "45 m", "difficulty": "hard" },
+    { "question": "An object moves at 8 m/s for 3 s, then accelerates at 2 m/s² for 4 s. Find total distance.", "answer": "56 m", "difficulty": "hard" },
+    { "question": "A train accelerates uniformly from 12 m/s to 20 m/s in 4 s. Find displacement.", "answer": "64 m", "difficulty": "hard" }
+  ]
+}

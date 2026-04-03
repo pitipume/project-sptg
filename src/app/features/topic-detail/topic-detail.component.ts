@@ -1,7 +1,8 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
-import { STUDY_TOPICS } from '../../core/data/study-data';
+import { StudyDataService } from '../../core/services/study-data.service';
+import { StudyTopic } from '../../core/models/study-topics.model';
 
 @Component({
   selector: 'app-topic-detail',
@@ -12,15 +13,42 @@ import { STUDY_TOPICS } from '../../core/data/study-data';
 })
 export class TopicDetailComponent {
   private readonly route = inject(ActivatedRoute);
+  private readonly studyDataService = inject(StudyDataService);
 
   readonly activeTab = signal<'knowledge' | 'practice'>('knowledge');
   readonly showAllAnswers = signal(false);
   readonly visibleAnswers = signal<Record<string, boolean>>({});
+  readonly topic = signal<StudyTopic | null>(null);
+  readonly loading = signal(true);
+  readonly error = signal('');
 
-  readonly topic = computed(() => {
-    const id = this.route.snapshot.paramMap.get('id');
-    return STUDY_TOPICS.find(x => x.id === id) ?? null;
-  });
+  constructor() {
+    this.loadTopic();
+  }
+
+  private loadTopic(): void {
+    const subjectParam = this.route.snapshot.paramMap.get('subject');
+    const topicId = this.route.snapshot.paramMap.get('id');
+
+    const subject = subjectParam === 'physics' ? 'physics' : 'math';
+
+    if (!topicId) {
+      this.error.set('Topic not found.');
+      this.loading.set(false);
+      return;
+    }
+
+    this.studyDataService.getTopic(subject, topicId).subscribe({
+      next: (data) => {
+        this.topic.set(data);
+        this.loading.set(false);
+      },
+      error: () => {
+        this.error.set('Failed to load topic.');
+        this.loading.set(false);
+      }
+    });
+  }
 
   setTab(tab: 'knowledge' | 'practice'): void {
     this.activeTab.set(tab);

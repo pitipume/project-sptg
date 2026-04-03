@@ -8,12 +8,22 @@
   </div>
 </section>
 
-<section class="topic-grid">
-  @for (topic of topics(); track topic.id) {
-    <a class="topic-card" [routerLink]="['/subject', topic.subject, 'topic', topic.id]">
-      <div class="pill">{{ topic.subject | titlecase }}</div>
-      <h2>{{ topic.title }}</h2>
-      <p>{{ topic.summary[0] }}</p>
-    </a>
-  }
-</section>
+@if (loading()) {
+  <section class="topic-grid">
+    <div class="topic-card">Loading...</div>
+  </section>
+} @else if (error()) {
+  <section class="topic-grid">
+    <div class="topic-card">{{ error() }}</div>
+  </section>
+} @else {
+  <section class="topic-grid">
+    @for (topic of topics(); track topic.id) {
+      <a class="topic-card" [routerLink]="['/subject', topic.subject, 'topic', topic.id]">
+        <div class="pill">{{ topic.subject | titlecase }}</div>
+        <h2>{{ topic.title }}</h2>
+        <p>{{ topic.summary }}</p>
+      </a>
+    }
+  </section>
+}

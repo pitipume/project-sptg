@@ -1,0 +1,36 @@
+{
+  "math": [
+    {
+      "id": "percent",
+      "title": "Percent",
+      "subject": "math",
+      "summary": "Percent, increase, decrease, discount, reverse percentage."
+    },
+    {
+      "id": "ratio-proportion",
+      "title": "Ratio & Proportion",
+      "subject": "math",
+      "summary": "Ratio split, combine ratio, proportional reasoning."
+    },
+    {
+      "id": "speed-distance-time",
+      "title": "Speed / Distance / Time",
+      "subject": "math",
+      "summary": "Travel, average speed, relative speed, unit conversion."
+    }
+  ],
+  "physics": [
+    {
+      "id": "kinematics",
+      "title": "Kinematics",
+      "subject": "physics",
+      "summary": "Motion with constant acceleration and free fall."
+    },
+    {
+      "id": "force-newton",
+      "title": "Force & Newton's Laws",
+      "subject": "physics",
+      "summary": "Net force, weight, equilibrium, and simple dynamics."
+    }
+  ]
+}

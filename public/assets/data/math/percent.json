@@ -1,0 +1,54 @@
+{
+  "id": "percent",
+  "title": "Percent",
+  "subject": "math",
+  "summary": [
+    "Percent means per hundred.",
+    "Used in increase, decrease, discount, profit, growth, and reverse percentage problems.",
+    "SPTG usually tests practical application rather than theory-heavy manipulation."
+  ],
+  "coreConcepts": [
+    "x% of y = (x/100) × y",
+    "Percentage change is relative to the original value",
+    "Successive percentage changes must be multiplied, not simply added",
+    "Increase and decrease by the same percentage do not cancel out"
+  ],
+  "derive": [
+    "% = (part / whole) × 100",
+    "part = (% / 100) × whole",
+    "new value = old value × (1 ± rate)",
+    "reverse old value = new value / (1 ± rate)"
+  ],
+  "formulas": [
+    "x% of y = (x/100)y",
+    "% increase = ((new - old) / old) × 100",
+    "% decrease = ((old - new) / old) × 100",
+    "successive multiplier = (1 + a)(1 + b)",
+    "after r% increase: new = old(1 + r/100)",
+    "after r% decrease: new = old(1 - r/100)"
+  ],
+  "sptgSet": [
+    { "question": "What is 25% of 200?", "answer": "50", "difficulty": "basic" },
+    { "question": "40% of x = 80. Find x.", "answer": "200", "difficulty": "basic" },
+    { "question": "A price increases from 100 to 130. Find the percentage increase.", "answer": "30%", "difficulty": "basic" },
+    { "question": "Decrease 200 by 15%.", "answer": "170", "difficulty": "intermediate" },
+    { "question": "Increase 500 by 20%.", "answer": "600", "difficulty": "intermediate" },
+    { "question": "A price increases by 10% and then by 10% again. Find the total percentage increase.", "answer": "21%", "difficulty": "intermediate" },
+    { "question": "A number increases by 20% and then decreases by 10%. Find the net change.", "answer": "+8%", "difficulty": "advanced" },
+    { "question": "A price increased by 25%. By what percent must it decrease to return to the original price?", "answer": "20%", "difficulty": "advanced" },
+    { "question": "A population grows by 10% each year for 2 years. Find the total growth.", "answer": "21%", "difficulty": "advanced" },
+    { "question": "After a 20% discount, a product costs 80. Find the original price.", "answer": "100", "difficulty": "advanced" }
+  ],
+  "hardSet": [
+    { "question": "A price increases by 10%, then 20%, then decreases by 25%. Find the net percentage change.", "answer": "-1%", "difficulty": "hard" },
+    { "question": "A quantity decreases by 20% and then increases by 25%. Find the net effect.", "answer": "No change", "difficulty": "hard" },
+    { "question": "A number increases by 50% and then decreases by 40%. Find the net effect.", "answer": "-10%", "difficulty": "hard" },
+    { "question": "A price is doubled and then decreased by 50%. Compare the final price to the original.", "answer": "Same as original", "difficulty": "hard" },
+    { "question": "A number becomes 125 after a 25% increase. Find the original value.", "answer": "100", "difficulty": "hard" },
+    { "question": "Apply successive increases of 5%, 10%, and 20%. Find the total increase.", "answer": "38.6%", "difficulty": "hard" },
+    { "question": "A value decreases by x% and then increases by x%, giving a net loss of 9%. Find x.", "answer": "30%", "difficulty": "hard" },
+    { "question": "A population decreases by 10% per year for 2 years. Find the total decrease.", "answer": "19%", "difficulty": "hard" },
+    { "question": "Two groups grow by 20% and 30% respectively. Can you determine the combined average growth without weights?", "answer": "No", "difficulty": "hard" },
+    { "question": "Two equal percentage increases result in a total increase of 44%. Find each increase.", "answer": "20%", "difficulty": "hard" }
+  ]
+}
