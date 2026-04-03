@@ -1,0 +1,210 @@
+{
+  "id": "electricity",
+  "title": "Electricity",
+  "subject": "physics",
+  "summary": [
+    "Electricity is a high-value SPTG topic because many questions are formula-based but still contain conceptual traps.",
+    "The main focus is current, voltage, resistance, Ohm’s law, simple circuits, electrical power, and energy usage.",
+    "Harder questions often involve series-parallel combinations, current division, and choosing the correct power formula."
+  ],
+  "coreConcepts": [
+    "Electric current is the rate of flow of charge.",
+    "Voltage is the electrical potential difference that drives current.",
+    "Resistance opposes current flow.",
+    "Ohm’s law connects voltage, current, and resistance through V = IR.",
+    "In a series circuit, current is the same through all components.",
+    "In a parallel circuit, voltage is the same across each branch.",
+    "Equivalent resistance in series adds directly.",
+    "Equivalent resistance in parallel decreases and is found by reciprocal addition.",
+    "Electrical power is the rate at which electrical energy is transferred.",
+    "Electrical energy used depends on power and time."
+  ],
+  "derive": [
+    "Current is defined as charge per unit time, so I = Q/t.",
+    "Ohm’s law gives V = IR for ohmic conductors.",
+    "In a series circuit, total voltage is the sum of voltage drops, so equivalent resistance adds: Req = R1 + R2 + ...",
+    "In a parallel circuit, branch currents add while voltage stays the same, leading to 1/Req = 1/R1 + 1/R2 + ...",
+    "Power is energy per unit time, so P = W/t.",
+    "Since W = VQ and I = Q/t, electrical power becomes P = VI.",
+    "Substituting V = IR gives P = I^2R and P = V^2/R."
+  ],
+  "formulas": [
+    "Charge: Q = It",
+    "Current: I = Q/t",
+    "Ohm's law: V = IR",
+    "Series resistance: Req = R1 + R2 + ...",
+    "Parallel resistance: 1/Req = 1/R1 + 1/R2 + ...",
+    "Power: P = VI",
+    "Power: P = I^2R",
+    "Power: P = V^2/R",
+    "Electrical energy: E = Pt",
+    "Electrical energy: E = VIt",
+    "1 kWh = 3.6 × 10^6 J"
+  ],
+  "traps": [
+    "Do not use series rules in parallel circuits or vice versa.",
+    "In series, current is the same; in parallel, voltage is the same.",
+    "Equivalent resistance in parallel is always less than the smallest branch resistance.",
+    "Power formulas are equivalent, but only use the one consistent with known values.",
+    "A larger resistance does not always mean larger total current effect; context matters.",
+    "Be careful with units: hours and seconds give different energy values.",
+    "If voltage is fixed, increasing resistance reduces current.",
+    "If current is fixed, increasing resistance increases voltage drop."
+  ],
+  "sptgSet": [
+    {
+      "question": "A current of 2 A flows for 5 s. Find the charge transferred.",
+      "answer": "10 C",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A resistor of 4 Ω carries a current of 3 A. Find the voltage across it.",
+      "answer": "12 V",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A bulb operates at 24 V and draws 2 A. Find its resistance.",
+      "answer": "12 Ω",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Two resistors 3 Ω and 5 Ω are connected in series. Find the equivalent resistance.",
+      "answer": "8 Ω",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Two resistors 6 Ω and 3 Ω are connected in parallel. Find the equivalent resistance.",
+      "answer": "2 Ω",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A device uses 60 W for 10 s. Find the energy used.",
+      "answer": "600 J",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A 12 V battery is connected to a 4 Ω resistor. Find the current.",
+      "answer": "3 A",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A resistor has current 2 A and voltage 10 V. Find the power.",
+      "answer": "20 W",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A 5 Ω resistor carries current 4 A. Find the power dissipated.",
+      "answer": "80 W",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "An appliance rated 1000 W runs for 2 hours. Find the energy used in kWh.",
+      "answer": "2 kWh",
+      "difficulty": "advanced"
+    }
+  ],
+  "hardSet": [
+    {
+      "question": "Three resistors 2 Ω, 3 Ω, and 5 Ω are connected in series to a 20 V supply. Find the circuit current.",
+      "answer": "2 A",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Two resistors 4 Ω and 12 Ω are connected in parallel to a 12 V source. Find total current.",
+      "answer": "4 A",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 24 V source is connected to two series resistors 4 Ω and 8 Ω. Find the voltage across the 8 Ω resistor.",
+      "answer": "16 V",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 12 V battery supplies a 6 Ω resistor and a 3 Ω resistor in parallel. Find the current through the 6 Ω branch.",
+      "answer": "2 A",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 12 V battery supplies a 6 Ω resistor and a 3 Ω resistor in parallel. Find the total current.",
+      "answer": "6 A",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A heater rated 2000 W runs for 30 minutes. Find energy used in joules.",
+      "answer": "3.6 × 10^6 J",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A resistor uses 50 W at 10 V. Find its resistance.",
+      "answer": "2 Ω",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A resistor of 8 Ω dissipates 72 W. Find the current through it.",
+      "answer": "3 A",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A battery delivers 120 C of charge in 1 minute. Find the current.",
+      "answer": "2 A",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A lamp uses 0.5 kWh in one day. Find its average power in watts.",
+      "answer": "20.83 W",
+      "difficulty": "hard"
+    }
+  ],
+  "pat3Set": [
+    {
+      "question": "A 24 V source is connected to a 4 Ω resistor in series with a parallel combination of 6 Ω and 3 Ω. Find the total current.",
+      "answer": "4 A",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "For the same circuit, find the voltage across the parallel section.",
+      "answer": "8 V",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "For the same circuit, find the current through the 6 Ω branch.",
+      "answer": "4/3 A",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Three resistors 2 Ω, 2 Ω, and 4 Ω are connected with the two 2 Ω resistors in parallel, then in series with 4 Ω. Find equivalent resistance.",
+      "answer": "5 Ω",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A resistor network has 3 Ω and 6 Ω in parallel, connected in series with 2 Ω, across 12 V. Find total power.",
+      "answer": "24 W",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 10 Ω resistor is connected to 20 V for 5 minutes. Find total heat energy produced.",
+      "answer": "12000 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A device operates at 90% efficiency and outputs 180 W. Find input power.",
+      "answer": "200 W",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 12 V battery is connected to a variable resistor. If current doubles when resistance is halved, explain using Ohm’s law.",
+      "answer": "Since I = V/R and V is constant, halving R doubles I",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 60 W, 240 V lamp is used for 10 hours. Find energy consumed in kWh and in joules.",
+      "answer": "0.6 kWh and 2.16 × 10^6 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A resistor network has total resistance 6 Ω on a 12 V source. Find current and total power.",
+      "answer": "2 A and 24 W",
+      "difficulty": "very hard"
+    }
+  ]
+}

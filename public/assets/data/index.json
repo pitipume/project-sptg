@@ -32,31 +32,31 @@
     },
     {
       "id": "geometry",
-      "title": "Geometry (Full Elite 30Q)",
+      "title": "Geometry",
       "subject": "math",
       "summary": "Triangles, circles, similarity, coordinate geometry, tangent, and PAT1-lite geometry."
     },
     {
       "id": "log",
-      "title": "Logarithm (Full Elite 30Q)",
+      "title": "Logarithm",
       "subject": "math",
       "summary": "Definitions, laws, change of base, equations, traps, and PAT1-lite logarithms."
     },
     {
       "id": "probability",
-      "title": "Probability (Full Elite 30Q)",
+      "title": "Probability",
       "subject": "math",
       "summary": "Basic probability, complement, counting, combinations, permutations, and PAT1-lite problems."
     },
     {
       "id": "statistics",
-      "title": "Statistics (Full Elite 30Q)",
+      "title": "Statistics",
       "subject": "math",
       "summary": "Mean, median, weighted average, variance, traps, and algebra-based statistics."
     },
     {
       "id": "sequence",
-      "title": "Sequence (Full Elite 30Q)",
+      "title": "Sequence",
       "subject": "math",
       "summary": "Arithmetic and geometric sequences, nth term, sums, recursion, and PAT1-lite sequence problems."
     }
@@ -73,6 +73,42 @@
       "title": "Force & Newton's Laws",
       "subject": "physics",
       "summary": "Net force, weight, equilibrium, and simple dynamics."
+    },
+    {
+      "id": "energy",
+      "title": "Work, Energy & Power",
+      "subject": "physics",
+      "summary": "Work, kinetic and potential energy, conservation, power, efficiency, and SPTG/PAT3-style traps."
+    },
+    {
+      "id": "momentum",
+      "title": "Momentum & Impulse",
+      "subject": "physics",
+      "summary": "Momentum, impulse, collisions, recoil, explosions, force-time graphs, and SPTG/PAT3-style traps."
+    },
+    {
+      "id": "fluid",
+      "title": "Fluid",
+      "subject": "physics",
+      "summary": "Density, pressure, buoyancy, floating, Pascal, continuity, Bernoulli, and SPTG/PAT3-style traps."
+    },
+    {
+      "id": "electricity",
+      "title": "Electricity",
+      "subject": "physics",
+      "summary": "Current, voltage, resistance, series-parallel circuits, power, energy, and SPTG/PAT3-style traps."
+    },
+    {
+      "id": "waves",
+      "title": "Waves & Sound",
+      "subject": "physics",
+      "summary": "Wave speed, frequency, period, sound, echo, medium effects, and SPTG/PAT3-style traps."
+    },
+    {
+      "id": "heat",
+      "title": "Heat & Temperature",
+      "subject": "physics",
+      "summary": "heat, temperature, and SPTG/PAT3-style traps."
     }
   ]
 }

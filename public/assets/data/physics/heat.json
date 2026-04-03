@@ -1,0 +1,197 @@
+{
+  "id": "heat",
+  "title": "Heat & Temperature",
+  "subject": "physics",
+  "summary": [
+    "Heat and temperature are core topics involving energy transfer and thermal equilibrium.",
+    "SPTG often tests Q = mcΔT, mixing problems, and phase changes.",
+    "Harder problems include combining multiple materials and latent heat."
+  ],
+  "coreConcepts": [
+    "Temperature measures average kinetic energy of particles.",
+    "Heat is energy transferred due to temperature difference.",
+    "Specific heat capacity is energy needed to raise temperature of 1 kg by 1°C.",
+    "Heat flows from hot to cold until equilibrium is reached.",
+    "At equilibrium, heat lost = heat gained.",
+    "During phase change, temperature remains constant while heat is absorbed or released.",
+    "Latent heat depends on mass and type of phase change.",
+    "Mixing problems conserve total heat energy."
+  ],
+  "derive": [
+    "Heat energy depends on mass, specific heat, and temperature change, giving Q = mcΔT.",
+    "If multiple objects interact thermally, total heat gained equals total heat lost.",
+    "For phase changes, energy is used to change state without changing temperature, giving Q = mL.",
+    "Equilibrium condition: sum of heat transfers = 0."
+  ],
+  "formulas": [
+    "Heat: Q = mcΔT",
+    "Latent heat: Q = mL",
+    "Equilibrium: heat lost = heat gained",
+    "ΔT = T_final - T_initial",
+    "Specific heat unit: J/kg°C"
+  ],
+  "traps": [
+    "Heat and temperature are not the same.",
+    "Temperature stays constant during phase change.",
+    "Sign of ΔT matters (heating vs cooling).",
+    "Always use consistent units (kg, J, °C).",
+    "In mixing problems, final temperature must be between initial temperatures.",
+    "Do not forget that heat lost equals heat gained."
+  ],
+  "sptgSet": [
+    {
+      "question": "Find heat required to raise temperature of 2 kg water by 5°C. (c = 4200 J/kg°C)",
+      "answer": "42000 J",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find temperature rise if 1000 J is added to 1 kg substance with c = 500 J/kg°C.",
+      "answer": "2°C",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find heat required to melt 2 kg ice if L = 334000 J/kg.",
+      "answer": "668000 J",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A 2 kg object cools from 80°C to 60°C with c = 500 J/kg°C. Find heat lost.",
+      "answer": "20000 J",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Find final temperature when 1 kg water at 80°C mixes with 1 kg water at 20°C.",
+      "answer": "50°C",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Find heat required to raise 0.5 kg water by 10°C.",
+      "answer": "21000 J",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Find ΔT if 8400 J heats 2 kg water.",
+      "answer": "1°C",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A 1 kg object absorbs 10000 J and increases temperature by 5°C. Find c.",
+      "answer": "2000 J/kg°C",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Heat needed to vaporize 1 kg water if L = 2.26×10^6 J/kg.",
+      "answer": "2.26×10^6 J",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What happens to temperature during melting?",
+      "answer": "Remains constant",
+      "difficulty": "advanced"
+    }
+  ],
+  "hardSet": [
+    {
+      "question": "A 2 kg metal at 100°C is placed in 1 kg water at 20°C. If final temperature is 40°C, find c of metal (c_water = 4200).",
+      "answer": "840 J/kg°C",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How much ice at 0°C must be added to 1 kg water at 40°C to reach 20°C? (L = 334000, c = 4200)",
+      "answer": "0.25 kg",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A heater supplies 500 W for 10 minutes. Find heat delivered.",
+      "answer": "300000 J",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 3 kg substance with c = 1000 J/kg°C is heated by 60000 J. Find ΔT.",
+      "answer": "20°C",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 2 kg block loses 16000 J cooling from 80°C. Find final temp if c = 400 J/kg°C.",
+      "answer": "60°C",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Mix 2 kg water at 60°C with 3 kg water at 20°C. Find final temperature.",
+      "answer": "36°C",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find heat needed to raise 5 kg water from 20°C to 100°C.",
+      "answer": "1680000 J",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 1 kg object loses 5000 J and cools by 10°C. Find c.",
+      "answer": "500 J/kg°C",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find heat required to melt 0.5 kg ice.",
+      "answer": "167000 J",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A system reaches equilibrium. What is relation of heat transfer?",
+      "answer": "Heat lost = heat gained",
+      "difficulty": "hard"
+    }
+  ],
+  "pat3Set": [
+    {
+      "question": "A 2 kg ice at 0°C melts and then heats to 20°C. Find total heat required.",
+      "answer": "752000 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 1 kg water at 100°C cools to 0°C and freezes. Find total heat lost.",
+      "answer": "754000 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 3 kg metal at 150°C is placed in 2 kg water at 30°C. Final temp is 60°C. Find c of metal.",
+      "answer": "560 J/kg°C",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Find heat required to raise 2 kg water from 20°C to steam at 100°C.",
+      "answer": "5.192×10^6 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A heater of 1000 W heats 2 kg water from 20°C to 100°C. Find time required.",
+      "answer": "672 s",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 1 kg object undergoes temperature rise from 20°C to 80°C with c = 500. Find heat.",
+      "answer": "30000 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A mixture problem results in final temp outside range. What does it indicate?",
+      "answer": "Calculation error",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Heat required to convert 0.2 kg ice at 0°C to water at 50°C.",
+      "answer": "108800 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 4 kg system absorbs 80000 J and rises by 10°C. Find c.",
+      "answer": "2000 J/kg°C",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A hot object placed in cold water. Explain final state.",
+      "answer": "Thermal equilibrium at same temperature",
+      "difficulty": "very hard"
+    }
+  ]
+}

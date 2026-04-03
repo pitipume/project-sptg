@@ -1,49 +1,198 @@
 {
   "id": "force-newton",
-  "title": "Force & Newton’s Laws",
+  "title": "Forces & Newton's Laws",
   "subject": "physics",
   "summary": [
-    "Force changes motion.",
-    "SPTG focuses on F = ma, weight, equilibrium, and simple tension or normal force ideas."
+    "This topic applies Newton's laws to analyze motion under forces.",
+    "SPTG heavily tests free body diagrams, friction, and multi-object systems.",
+    "Success depends on setting correct equations, not complex math."
   ],
   "coreConcepts": [
-    "Net force causes acceleration.",
-    "If net force is zero, an object is in equilibrium or moves with constant velocity.",
-    "Weight is the gravitational force on an object."
+    "Newton's 1st law: object stays at rest or constant velocity unless net force acts.",
+    "Newton's 2nd law: F = ma.",
+    "Newton's 3rd law: action-reaction pairs are equal and opposite.",
+    "Normal force is perpendicular to surface, not always equal to weight.",
+    "Friction opposes motion: f ≤ μN.",
+    "Tension is same throughout a massless rope.",
+    "Always analyze forces per object using FBD."
   ],
   "derive": [
-    "Newton’s Second Law states net force is proportional to acceleration.",
-    "Therefore F = ma.",
-    "Weight is the force due to gravity, so W = mg."
+    "From Newton's 2nd law: ΣF = ma.",
+    "On incline: weight splits into mg sinθ (down slope) and mg cosθ (normal).",
+    "Friction: f = μN.",
+    "For multiple objects: treat system together or separately.",
+    "If system moves together, internal forces cancel."
   ],
   "formulas": [
     "F = ma",
-    "W = mg",
-    "Net force = sum of all forces",
-    "If object is at rest or constant velocity, net force = 0"
+    "weight = mg",
+    "friction: f = μN",
+    "incline: mg sinθ (parallel), mg cosθ (perpendicular)",
+    "tension: same in ideal rope",
+    "net force = sum of all forces"
+  ],
+  "traps": [
+    "Normal force is not always equal to mg.",
+    "Friction is μN only when at maximum or moving.",
+    "Do not mix action-reaction pairs within same body.",
+    "In incline problems, resolve forces correctly.",
+    "For connected systems, do not double count forces.",
+    "Sign convention mistakes lead to wrong answers."
   ],
   "sptgSet": [
-    { "question": "m = 2 kg, a = 5 m/s². Find F.", "answer": "10 N", "difficulty": "basic" },
-    { "question": "An object is at rest. What is the net force?", "answer": "0 N", "difficulty": "basic" },
-    { "question": "g is approximately equal to what?", "answer": "9.8 or 10 m/s²", "difficulty": "basic" },
-    { "question": "Find weight of a 3 kg object using g = 10.", "answer": "30 N", "difficulty": "intermediate" },
-    { "question": "If net force on a body is zero, what can you say about acceleration?", "answer": "Acceleration is zero", "difficulty": "intermediate" },
-    { "question": "A 4 kg mass accelerates at 3 m/s². Find net force.", "answer": "12 N", "difficulty": "intermediate" },
-    { "question": "A 20 N force acts on a 5 kg mass. Find acceleration.", "answer": "4 m/s²", "difficulty": "advanced" },
-    { "question": "A body of mass 2 kg has forces 10 N right and 4 N left. Find acceleration.", "answer": "3 m/s² to the right", "difficulty": "advanced" },
-    { "question": "A hanging body has mass 6 kg. Find its weight using g = 10.", "answer": "60 N", "difficulty": "advanced" },
-    { "question": "What happens if applied force equals friction?", "answer": "Net force is zero", "difficulty": "advanced" }
+    {
+      "question": "A 2 kg object accelerates at 3 m/s^2. Find net force.",
+      "answer": "6 N",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A 5 kg object is at rest. What is net force?",
+      "answer": "0 N",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find weight of 10 kg object (g=10).",
+      "answer": "100 N",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A 10 kg box is pushed with 50 N and friction is 20 N. Find acceleration.",
+      "answer": "3 m/s^2",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Find normal force of 5 kg object on flat surface.",
+      "answer": "50 N",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A 4 kg object experiences friction coefficient 0.5. Find friction force (g=10).",
+      "answer": "20 N",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Block on incline (30°), mass 2 kg. Find component down slope (g=10).",
+      "answer": "10 N",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Two masses 2 kg and 3 kg connected, pulled with 25 N. Find acceleration.",
+      "answer": "5 m/s^2",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Tension in system above (2 kg block).",
+      "answer": "10 N",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A 5 kg object on incline with μ=0.2. Find friction.",
+      "answer": "10 N",
+      "difficulty": "advanced"
+    }
   ],
   "hardSet": [
-    { "question": "A 5 kg object experiences forces 20 N right, 8 N left, and 2 N left. Find acceleration.", "answer": "2 m/s² right", "difficulty": "hard" },
-    { "question": "A 10 kg body is pulled with 50 N and friction is 20 N. Find acceleration.", "answer": "3 m/s²", "difficulty": "hard" },
-    { "question": "Find the net force needed to accelerate 12 kg at 2.5 m/s².", "answer": "30 N", "difficulty": "hard" },
-    { "question": "A 40 N net force acts on a mass and gives 5 m/s² acceleration. Find mass.", "answer": "8 kg", "difficulty": "hard" },
-    { "question": "A box is pushed right with 30 N and left with 18 N. Mass = 3 kg. Find acceleration.", "answer": "4 m/s² right", "difficulty": "hard" },
-    { "question": "A body moves with constant velocity. Can forces still act on it?", "answer": "Yes, but net force must be zero", "difficulty": "hard" },
-    { "question": "A 2 kg object hangs motionless from a rope. Find rope tension using g = 10.", "answer": "20 N", "difficulty": "hard" },
-    { "question": "A lift moves upward at constant velocity with a 50 kg person inside. Find apparent weight trend.", "answer": "Same as normal weight", "difficulty": "hard" },
-    { "question": "A 6 kg block has acceleration 2 m/s² left. Find net force.", "answer": "12 N left", "difficulty": "hard" },
-    { "question": "If acceleration doubles while mass stays the same, what happens to force?", "answer": "Force doubles", "difficulty": "hard" }
+    {
+      "question": "Two blocks (2 kg and 3 kg) connected, frictionless, pulled by 20 N. Find tension.",
+      "answer": "8 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Block on 30° incline, μ=0.5, mass 4 kg. Does it move?",
+      "answer": "No",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find acceleration of 5 kg block on incline 37° (g=10).",
+      "answer": "6 m/s^2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Two blocks connected over pulley (2 kg, 3 kg). Find acceleration.",
+      "answer": "2 m/s^2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find tension in above system.",
+      "answer": "16 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 10 kg box pushed at angle 30° upward with 50 N. Find normal force.",
+      "answer": "approx 75 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A system accelerates upward at 2 m/s^2. Find apparent weight of 5 kg object.",
+      "answer": "60 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Elevator accelerating downward. Find apparent weight.",
+      "answer": "less than mg",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 3 kg object on rough surface, μ=0.3. Find minimum force to move.",
+      "answer": "9 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Block pulled with constant velocity. What is net force?",
+      "answer": "0 N",
+      "difficulty": "hard"
+    }
+  ],
+  "pat3Set": [
+    {
+      "question": "A block on incline with friction. Derive acceleration formula.",
+      "answer": "a = g(sinθ - μcosθ)",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Two-block system with friction. Find acceleration.",
+      "answer": "depends on setup",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Find condition for no motion on incline.",
+      "answer": "tanθ ≤ μ",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Pulley system with 3 masses. Find acceleration.",
+      "answer": "multi-step",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Find normal force on curved path.",
+      "answer": "depends",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Block on accelerating platform. Find friction.",
+      "answer": "relative",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Elevator free fall. Apparent weight?",
+      "answer": "0",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Find tension in accelerating rope system.",
+      "answer": "multi-step",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Atwood machine derive acceleration.",
+      "answer": "(m2-m1)g/(m1+m2)",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Force vs time graph → find impulse.",
+      "answer": "area",
+      "difficulty": "very hard"
+    }
   ]
 }

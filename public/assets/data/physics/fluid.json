@@ -1,0 +1,211 @@
+{
+  "id": "fluid",
+  "title": "Fluid",
+  "subject": "physics",
+  "summary": [
+    "Fluid mechanics in SPTG usually focuses on density, pressure, buoyancy, and floating conditions.",
+    "Harder questions may extend to pressure at depth, Pascal's principle, continuity, and basic Bernoulli ideas.",
+    "The key is understanding what quantity controls what: density affects weight per volume, pressure depends on force per area, and buoyancy depends on displaced fluid."
+  ],
+  "coreConcepts": [
+    "Density is mass per unit volume.",
+    "Pressure is force per unit area.",
+    "In a static fluid, pressure increases with depth.",
+    "At the same depth in the same fluid, pressure is the same.",
+    "Buoyant force equals the weight of displaced fluid.",
+    "An object floats when buoyant force equals its weight.",
+    "An object sinks when its weight is greater than the maximum buoyant force available.",
+    "Relative density compares density of a substance to that of water.",
+    "Continuity means incompressible fluid flow rate is conserved: narrower area leads to higher speed.",
+    "Bernoulli connects pressure, speed, and height along a streamline in ideal flow."
+  ],
+  "derive": [
+    "Density is defined as mass divided by volume, so ρ = m/V.",
+    "Pressure is force per area, so P = F/A.",
+    "For a fluid column of height h and cross-sectional area A, the fluid weight is mg = ρVg = ρAhg.",
+    "Thus pressure due to the column is P = F/A = ρAhg / A = ρgh.",
+    "By Archimedes' principle, buoyant force equals the weight of displaced fluid, so Fb = ρfluid g Vdisplaced.",
+    "For floating equilibrium, upward buoyant force equals downward weight.",
+    "For incompressible flow, volume flow rate is conserved: A1v1 = A2v2.",
+    "Bernoulli in ideal fluid flow comes from energy conservation per unit volume: P + (1/2)ρv^2 + ρgh = constant."
+  ],
+  "formulas": [
+    "Density: ρ = m / V",
+    "Pressure: P = F / A",
+    "Hydrostatic pressure: P = ρgh",
+    "Total pressure at depth: Ptotal = Patm + ρgh",
+    "Buoyant force: Fb = ρfluid g Vdisplaced",
+    "Weight: W = mg",
+    "Floating condition: Fb = W",
+    "Relative density = density of substance / density of water",
+    "Continuity equation: A1v1 = A2v2",
+    "Bernoulli equation: P + (1/2)ρv^2 + ρgh = constant",
+    "Pascal principle (same transmitted pressure): F1/A1 = F2/A2"
+  ],
+  "traps": [
+    "Pressure depends on depth, not on total volume of fluid in the container.",
+    "At the same depth in the same fluid, pressure is equal even if the container shape changes.",
+    "Buoyant force depends on displaced fluid, not on the object's entire volume unless fully submerged.",
+    "A floating object does not necessarily have zero buoyant force; it has buoyant force equal to its weight.",
+    "Density and relative density are not the same quantity.",
+    "Hydrostatic pressure ρgh is gauge pressure; total pressure also includes atmospheric pressure.",
+    "For continuity, smaller area means larger speed, not smaller speed.",
+    "Bernoulli is for ideal flow; do not use it blindly in every real-fluid situation."
+  ],
+  "sptgSet": [
+    {
+      "question": "Find the density of a substance of mass 20 kg and volume 4 m^3.",
+      "answer": "5 kg/m^3",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A force of 40 N acts on an area of 2 m^2. Find pressure.",
+      "answer": "20 Pa",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the hydrostatic pressure at depth 5 m in water. Use ρ = 1000 kg/m^3 and g = 10 m/s^2.",
+      "answer": "50000 Pa",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A body of volume 0.02 m^3 is fully immersed in water. Find the buoyant force. Use ρ = 1000 kg/m^3 and g = 10 m/s^2.",
+      "answer": "200 N",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "An object has mass 4 kg and volume 0.01 m^3. Find its density.",
+      "answer": "400 kg/m^3",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Will the object in the previous question float in water? Explain using density.",
+      "answer": "Yes, because 400 kg/m^3 is less than 1000 kg/m^3",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A hydraulic lift has small piston area 0.01 m^2 and large piston area 0.2 m^2. If 50 N is applied on the small piston, find the output force.",
+      "answer": "1000 N",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Water flows in a pipe of area 4 m^2 at speed 3 m/s. It enters a narrower section of area 2 m^2. Find the new speed.",
+      "answer": "6 m/s",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "At what depth in water is the hydrostatic pressure 20000 Pa? Use ρ = 1000 kg/m^3 and g = 10 m/s^2.",
+      "answer": "2 m",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A floating block weighs 80 N. What is the buoyant force on it?",
+      "answer": "80 N",
+      "difficulty": "advanced"
+    }
+  ],
+  "hardSet": [
+    {
+      "question": "A block of density 800 kg/m^3 floats in water. What fraction of its volume is submerged?",
+      "answer": "0.8 or 80%",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A solid of volume 0.05 m^3 and density 1200 kg/m^3 is fully submerged in water. Find its apparent weight. Use g = 10 m/s^2.",
+      "answer": "100 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Compare the hydrostatic pressure at the same depth in two differently shaped containers filled with water.",
+      "answer": "Equal",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A body displaces 0.03 m^3 of water while floating. Find its weight. Use ρ = 1000 kg/m^3 and g = 10 m/s^2.",
+      "answer": "300 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A metal block of mass 10 kg and volume 0.001 m^3 is placed in water. Will it sink or float?",
+      "answer": "Sink",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A hydraulic press has piston areas 5 cm^2 and 200 cm^2. If the input force is 25 N, find the output force.",
+      "answer": "1000 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Water enters a pipe section of area 0.04 m^2 at 2 m/s and leaves through area 0.01 m^2. Find exit speed.",
+      "answer": "8 m/s",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the total pressure at depth 3 m in water if atmospheric pressure is 100000 Pa. Use ρ = 1000 kg/m^3 and g = 10 m/s^2.",
+      "answer": "130000 Pa",
+      "difficulty": "hard"
+    },
+    {
+      "question": "An object weighs 120 N in air and 80 N when fully immersed in water. Find the buoyant force.",
+      "answer": "40 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "An object weighs 120 N in air and 80 N in water. Find the volume of displaced water. Use ρ = 1000 kg/m^3 and g = 10 m/s^2.",
+      "answer": "0.004 m^3",
+      "difficulty": "hard"
+    }
+  ],
+  "pat3Set": [
+    {
+      "question": "A block of density 750 kg/m^3 floats in oil of density 900 kg/m^3. Find the fraction submerged.",
+      "answer": "5/6",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A cube of side 0.2 m and density 500 kg/m^3 floats in water. Find the submerged height. Use ρwater = 1000 kg/m^3.",
+      "answer": "0.1 m",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A container has water to depth 4 m. Find the hydrostatic force on a 0.5 m^2 horizontal surface at the bottom. Use ρ = 1000 kg/m^3 and g = 10 m/s^2.",
+      "answer": "20000 N",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Water flows through a pipe that narrows from 0.03 m^2 to 0.01 m^2. If the speed in the larger section is 4 m/s, find the speed in the smaller section.",
+      "answer": "12 m/s",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "In an ideal horizontal pipe, water speed increases from 2 m/s to 6 m/s. State how pressure changes according to Bernoulli.",
+      "answer": "Pressure decreases",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A solid of density 2000 kg/m^3 and volume 0.01 m^3 is suspended fully in water. Find tension in the supporting string. Use g = 10 m/s^2.",
+      "answer": "100 N",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A floating object has 30% of its volume above water. Find its density. Use ρwater = 1000 kg/m^3.",
+      "answer": "700 kg/m^3",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A liquid has relative density 1.2. Find its density in kg/m^3.",
+      "answer": "1200 kg/m^3",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A U-tube contains two immiscible liquids. One side has 10 cm of water. The other has oil of density 800 kg/m^3. Find oil height for equal pressure at same level.",
+      "answer": "12.5 cm",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A body experiences buoyant force 250 N in a liquid of density 1250 kg/m^3. Find displaced volume. Use g = 10 m/s^2.",
+      "answer": "0.02 m^3",
+      "difficulty": "very hard"
+    }
+  ]
+}

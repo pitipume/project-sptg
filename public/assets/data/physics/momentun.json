@@ -1,0 +1,204 @@
+{
+  "id": "momentum",
+  "title": "Momentum & Impulse",
+  "subject": "physics",
+  "summary": [
+    "Momentum describes motion through mass and velocity, and it is central to collision and explosion problems.",
+    "SPTG commonly tests direct momentum calculation, impulse, and conservation in one-dimensional collisions.",
+    "Harder problems include sign conventions, recoil, elastic versus inelastic behavior, and linking force-time graphs to impulse."
+  ],
+  "coreConcepts": [
+    "Momentum is a vector quantity: p = mv.",
+    "A heavier object or a faster object has greater momentum.",
+    "Impulse equals change in momentum.",
+    "If external net force is negligible, total momentum is conserved.",
+    "In collisions, momentum is always conserved for an isolated system.",
+    "Kinetic energy is not always conserved, but momentum is.",
+    "In a perfectly inelastic collision, objects stick together after impact.",
+    "In explosions, total momentum before and after remains the same if no external impulse acts.",
+    "Direction matters, so signs must be assigned carefully in one-dimensional problems.",
+    "The area under a force-time graph equals impulse."
+  ],
+  "derive": [
+    "Momentum is defined as mass times velocity, so p = mv.",
+    "Newton's second law in momentum form is F = dp/dt.",
+    "Multiplying both sides by time interval gives Ft = Δp.",
+    "This leads to impulse J = FΔt = Δp for constant force.",
+    "For a system of bodies with negligible external force, internal forces cancel in pairs, so total momentum remains constant.",
+    "Thus total momentum before collision equals total momentum after collision."
+  ],
+  "formulas": [
+    "Momentum: p = mv",
+    "Impulse: J = FΔt",
+    "Impulse-momentum theorem: J = Δp = p_final - p_initial",
+    "Conservation of momentum: total momentum before = total momentum after",
+    "Perfectly inelastic collision: m1u1 + m2u2 = (m1 + m2)v",
+    "Force from momentum change: F = Δp / Δt",
+    "Area under force-time graph = impulse"
+  ],
+  "traps": [
+    "Momentum is a vector, so direction signs matter.",
+    "Do not assume kinetic energy is conserved unless the problem states elastic behavior or it is implied.",
+    "In stick-together collisions, final mass becomes the sum of masses.",
+    "A large force over short time can produce the same impulse as a small force over long time.",
+    "Explosion problems often start from total momentum zero.",
+    "Do not mix up impulse with force; impulse includes time.",
+    "When using conservation, check whether external force can be neglected."
+  ],
+  "sptgSet": [
+    {
+      "question": "Find the momentum of a 2 kg object moving at 5 m/s.",
+      "answer": "10 kg·m/s",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A 4 kg object is at rest. Find its momentum.",
+      "answer": "0 kg·m/s",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A force of 10 N acts for 3 s on an object. Find the impulse.",
+      "answer": "30 N·s",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A 3 kg object changes velocity from 2 m/s to 6 m/s. Find the change in momentum.",
+      "answer": "12 kg·m/s",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A 5 kg cart moving at 4 m/s collides with a wall and rebounds at 2 m/s in the opposite direction. Find the change in momentum.",
+      "answer": "-30 kg·m/s if initial direction is positive",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A 2 kg object initially at rest experiences an impulse of 14 N·s. Find its final velocity.",
+      "answer": "7 m/s",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Two objects of masses 2 kg and 3 kg move at 4 m/s and 0 m/s respectively. They stick together. Find their final velocity.",
+      "answer": "1.6 m/s",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A 1 kg ball moving at 6 m/s hits a 2 kg stationary ball and they move together. Find their common velocity.",
+      "answer": "2 m/s",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A force-time graph is a rectangle of height 8 N and width 5 s. Find the impulse.",
+      "answer": "40 N·s",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A gun of mass 4 kg fires a bullet of mass 0.02 kg at 200 m/s. Find the recoil speed of the gun.",
+      "answer": "1 m/s backward",
+      "difficulty": "advanced"
+    }
+  ],
+  "hardSet": [
+    {
+      "question": "A 2 kg object moving at 10 m/s collides head-on with a 3 kg object moving at 4 m/s in the opposite direction. They stick together. Find the final velocity.",
+      "answer": "2 m/s in the 2 kg object's original direction",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 0.5 kg ball moving at 8 m/s rebounds at 6 m/s in the opposite direction after hitting a wall. Find the impulse on the ball.",
+      "answer": "-7 N·s if initial direction is positive",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 1200 kg car moving at 20 m/s collides with a 800 kg car moving at rest. If they stick together, find the common velocity.",
+      "answer": "12 m/s",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 3 kg object initially moves at 5 m/s. A constant force acts for 4 s and changes its velocity to 9 m/s. Find the force.",
+      "answer": "3 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 1 kg ball drops vertically and hits the ground at 10 m/s, then rebounds upward at 6 m/s. Find the change in momentum.",
+      "answer": "16 kg·m/s upward if upward is positive",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 2 kg trolley moving at 3 m/s receives an impulse of 10 N·s in the same direction. Find its new speed.",
+      "answer": "8 m/s",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Two ice skaters of masses 50 kg and 70 kg push off from rest. If the 50 kg skater moves backward at 4 m/s, find the speed of the 70 kg skater.",
+      "answer": "20/7 m/s in the opposite direction",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 0.1 kg ball moving at 30 m/s is struck and leaves in the opposite direction at 20 m/s. If contact time is 0.01 s, find average force.",
+      "answer": "500 N",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 4 kg cart moving at 6 m/s catches a 1 kg bag dropped vertically into it. Find the new horizontal speed of the cart-bag system.",
+      "answer": "4.8 m/s",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A force-time graph is triangular with base 4 s and height 12 N. Find impulse.",
+      "answer": "24 N·s",
+      "difficulty": "hard"
+    }
+  ],
+  "pat3Set": [
+    {
+      "question": "A 2 kg object moving at 8 m/s collides elastically with a 2 kg object at rest. Find the final velocities.",
+      "answer": "First stops, second moves at 8 m/s",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 3 kg object moving at 10 m/s collides elastically head-on with a 1 kg object at rest. Find the final velocities.",
+      "answer": "First: 5 m/s, second: 15 m/s",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A shell initially at rest explodes into two fragments of masses 2 kg and 3 kg. If the 2 kg fragment moves at 12 m/s, find the velocity of the 3 kg fragment.",
+      "answer": "8 m/s in the opposite direction",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 0.2 kg ball moving at 25 m/s is brought to rest in 0.05 s. Find average force.",
+      "answer": "100 N opposite the motion",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A force-time graph consists of a rectangle 6 N by 3 s followed by a triangle of base 2 s and height 6 N. Find total impulse.",
+      "answer": "24 N·s",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 5 kg block moving at 4 m/s collides with a 3 kg block moving at -2 m/s. If the final velocity of the 5 kg block is 1 m/s, find the final velocity of the 3 kg block.",
+      "answer": "3 m/s",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 1 kg object receives a variable force such that the force-time graph is a straight line from 0 N at t=0 to 10 N at t=4 s. If initially at rest, find final velocity.",
+      "answer": "20 m/s",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A rocket ejects gas backward. State which conservation law explains its motion and why.",
+      "answer": "Conservation of momentum; forward rocket momentum balances backward gas momentum",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 10 g bullet moving at 300 m/s embeds in a 1.49 kg wooden block initially at rest. Find the speed just after impact.",
+      "answer": "2 m/s",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 2 kg body moving at 5 m/s is acted on by a net force that changes linearly from 0 to 8 N over 3 s. Find final momentum.",
+      "answer": "22 kg·m/s",
+      "difficulty": "very hard"
+    }
+  ]
+}

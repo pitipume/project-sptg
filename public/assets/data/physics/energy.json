@@ -1,0 +1,205 @@
+{
+  "id": "energy",
+  "title": "Work, Energy & Power",
+  "subject": "physics",
+  "summary": [
+    "This topic connects force and motion through work and energy.",
+    "SPTG often tests work done by forces, kinetic and potential energy, conservation of mechanical energy, and power.",
+    "Harder problems include friction, efficiency, and combining energy with kinematics or force."
+  ],
+  "coreConcepts": [
+    "Work is done when a force causes displacement in its direction.",
+    "Kinetic energy depends on speed: faster motion means much larger kinetic energy.",
+    "Potential energy depends on position, usually height in a gravitational field.",
+    "Mechanical energy is the sum of kinetic and potential energy.",
+    "If no non-conservative force acts, mechanical energy is conserved.",
+    "Friction converts mechanical energy into heat, so mechanical energy is not conserved in that case.",
+    "Power is the rate of doing work or transferring energy.",
+    "Efficiency compares useful output energy or power to total input."
+  ],
+  "derive": [
+    "Work is force times displacement in the direction of motion, so W = Fs when force is parallel to displacement.",
+    "From Newton's second law and kinematics, the work done by net force becomes change in kinetic energy, giving the work-energy theorem.",
+    "Thus W_net = ΔK = (1/2)mv^2 - (1/2)mu^2.",
+    "Gravitational potential energy is defined relative to height, giving U = mgh.",
+    "Mechanical energy is E = K + U.",
+    "Power is work per unit time, so P = W/t.",
+    "Since v = s/t, power can also be written as P = Fv when force and velocity are in the same direction."
+  ],
+  "formulas": [
+    "Work: W = Fs",
+    "Work at angle: W = Fs cosθ",
+    "Kinetic energy: K = (1/2)mv^2",
+    "Gravitational potential energy: U = mgh",
+    "Mechanical energy: E = K + U",
+    "Work-energy theorem: W_net = ΔK",
+    "Power: P = W/t",
+    "Power (parallel motion): P = Fv",
+    "Efficiency = useful output / input × 100%"
+  ],
+  "traps": [
+    "Work is zero if force is perpendicular to displacement.",
+    "Potential energy depends on height difference, not the path taken.",
+    "Mechanical energy is conserved only when non-conservative forces like friction are absent or ignored.",
+    "Doubling speed does not double kinetic energy; it makes kinetic energy four times larger.",
+    "Power is not the same as total energy; it is energy per unit time.",
+    "A body can have zero potential energy at one reference level and nonzero at another; only differences matter.",
+    "Do not forget signs when work is done against motion or by friction."
+  ],
+  "sptgSet": [
+    {
+      "question": "A force of 10 N moves an object 5 m in the same direction. Find the work done.",
+      "answer": "50 J",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the kinetic energy of a 2 kg object moving at 3 m/s.",
+      "answer": "9 J",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the gravitational potential energy of a 5 kg mass at height 4 m. Use g = 10 m/s^2.",
+      "answer": "200 J",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A machine does 120 J of work in 6 s. Find its power.",
+      "answer": "20 W",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A 4 kg object moves at 5 m/s. Find its kinetic energy.",
+      "answer": "50 J",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A 2 kg object falls from height 10 m. Find its potential energy at the top. Use g = 10 m/s^2.",
+      "answer": "200 J",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If a body starts from rest and reaches 4 m/s, what is the change in kinetic energy for mass 3 kg?",
+      "answer": "24 J",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A 1 kg object drops from height 20 m. Ignoring air resistance, find its speed just before hitting the ground. Use g = 10 m/s^2.",
+      "answer": "20 m/s",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A machine has input energy 500 J and useful output 400 J. Find efficiency.",
+      "answer": "80%",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A force of 20 N acts on an object moving at 3 m/s in the same direction. Find power.",
+      "answer": "60 W",
+      "difficulty": "advanced"
+    }
+  ],
+  "hardSet": [
+    {
+      "question": "A 2 kg object slides down from height 15 m without friction. Find its speed at the bottom. Use g = 10 m/s^2.",
+      "answer": "10√3 m/s",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 5 kg object moving at 6 m/s is brought to rest by friction. Find the work done by friction.",
+      "answer": "-90 J",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A force of 50 N acts at 60° to the direction of motion while the object moves 8 m. Find the work done by the force.",
+      "answer": "200 J",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A lift raises a 200 kg load through 5 m in 10 s. Use g = 10 m/s^2. Find the power.",
+      "answer": "1000 W",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 3 kg block is pushed across a rough floor with friction force 12 N for 5 m. Find the work done by friction.",
+      "answer": "-60 J",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A car engine delivers 40 kJ of useful work from 50 kJ of fuel energy. Find efficiency.",
+      "answer": "80%",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 2 kg body is thrown vertically upward with speed 20 m/s. Find the maximum height reached. Use g = 10 m/s^2.",
+      "answer": "20 m",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 1 kg object has kinetic energy 72 J. Find its speed.",
+      "answer": "12 m/s",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A force does 300 J of work in 15 s. Find average power.",
+      "answer": "20 W",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 4 kg object starts from rest and gains 200 J of kinetic energy. Find its final speed.",
+      "answer": "10 m/s",
+      "difficulty": "hard"
+    }
+  ],
+  "pat3Set": [
+    {
+      "question": "A 2 kg block slides down a 5 m high frictionless track. Find its speed at the bottom using energy conservation. Use g = 10 m/s^2.",
+      "answer": "10 m/s",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 3 kg object moves at 4 m/s and then at 10 m/s. Find the work done on it.",
+      "answer": "126 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 5 kg object is projected upward with 30 m/s from ground level. Find its total mechanical energy at launch. Use g = 10 m/s^2.",
+      "answer": "2250 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A machine of power 500 W works for 3 minutes. Find total work done.",
+      "answer": "90000 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 2 kg object moves up an incline and rises by 3 m while friction does -20 J of work. If its initial kinetic energy is 100 J, find final kinetic energy. Use g = 10 m/s^2.",
+      "answer": "20 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 1 kg pendulum bob is raised by 0.8 m. Find the increase in gravitational potential energy. Use g = 10 m/s^2.",
+      "answer": "8 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A motor lifts a 50 kg load at constant speed 2 m/s. Use g = 10 m/s^2. Find power output.",
+      "answer": "1000 W",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 2 kg object falls from rest through 12 m. Find its kinetic energy just before impact, ignoring air resistance. Use g = 10 m/s^2.",
+      "answer": "240 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A 3 kg block is pushed 4 m by a horizontal 25 N force on a rough surface. Friction is 10 N. Find the net work done.",
+      "answer": "60 J",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "A particle has total mechanical energy 200 J and potential energy 80 J at some point. Find kinetic energy at that point.",
+      "answer": "120 J",
+      "difficulty": "very hard"
+    }
+  ]
+}
