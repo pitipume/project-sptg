@@ -1,0 +1,27 @@
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">SPTG 2026 Prep</p>
+    <h1>Math + Physics review hub</h1>
+    <p class="subtext">
+      อ่านสรุป ทวนสูตร เข้าใจ core concepts แล้วกดทำโจทย์แยกบทได้เลย
+    </p>
+
+    <div class="actions">
+      <a routerLink="/subject/math" class="btn primary">Go to Math</a>
+      <a routerLink="/subject/physics" class="btn secondary">Go to Physics</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <h2>What this app contains</h2>
+
+    <div class="stat-list">
+      @for (item of stats; track item.label) {
+        <div class="stat-item">
+          <h3>{{ item.label }}</h3>
+          <p>{{ item.value }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

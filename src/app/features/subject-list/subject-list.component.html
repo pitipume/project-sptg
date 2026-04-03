@@ -1,0 +1,19 @@
+<section class="page-header">
+  <div>
+    <p class="eyebrow">Subject</p>
+    <h1>{{ title() }}</h1>
+    <p class="subtext">
+      เลือกบทเพื่อเข้าไปอ่าน summary, derive, formulas และทำโจทย์
+    </p>
+  </div>
+</section>
+
+<section class="topic-grid">
+  @for (topic of topics(); track topic.id) {
+    <a class="topic-card" [routerLink]="['/subject', topic.subject, 'topic', topic.id]">
+      <div class="pill">{{ topic.subject | titlecase }}</div>
+      <h2>{{ topic.title }}</h2>
+      <p>{{ topic.summary[0] }}</p>
+    </a>
+  }
+</section>

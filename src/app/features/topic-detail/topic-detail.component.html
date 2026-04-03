@@ -1,0 +1,106 @@
+@if (topic(); as item) {
+  <section class="topic-header">
+    <div>
+      <p class="eyebrow">{{ item.subject | titlecase }}</p>
+      <h1>{{ item.title }}</h1>
+      <p class="subtext">{{ item.summary[0] }}</p>
+    </div>
+
+    <div class="tab-group">
+      <button
+        class="tab-btn"
+        [class.active]="activeTab() === 'knowledge'"
+        (click)="setTab('knowledge')">
+        Knowledge
+      </button>
+
+      <button
+        class="tab-btn"
+        [class.active]="activeTab() === 'practice'"
+        (click)="setTab('practice')">
+        Practice
+      </button>
+    </div>
+  </section>
+
+  @if (activeTab() === 'knowledge') {
+    <section class="content-grid">
+      <article class="card">
+        <h2>Summary knowledge</h2>
+        <ul>
+          @for (line of item.summary; track line) {
+            <li>{{ line }}</li>
+          }
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Core concepts</h2>
+        <ul>
+          @for (line of item.coreConcepts; track line) {
+            <li>{{ line }}</li>
+          }
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Derive / how formulas come from</h2>
+        <ul>
+          @for (line of item.derive; track line) {
+            <li>{{ line }}</li>
+          }
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Core formulas</h2>
+        <ul>
+          @for (line of item.formulas; track line) {
+            <li><code>{{ line }}</code></li>
+          }
+        </ul>
+      </article>
+    </section>
+  }
+
+  @if (activeTab() === 'practice') {
+    <section class="practice-stack">
+      <article class="card">
+        <h2>SPTG style set (10)</h2>
+        <div class="qa-list">
+          @for (q of item.sptgSet; track q.question; let i = $index) {
+            <div class="qa-item">
+              <div class="qa-top">
+                <span class="num">{{ i + 1 }}</span>
+                <span class="difficulty">{{ q.difficulty | titlecase }}</span>
+              </div>
+              <p class="question">{{ q.question }}</p>
+              <p class="answer"><strong>Answer:</strong> {{ q.answer }}</p>
+            </div>
+          }
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Hard concept set (10)</h2>
+        <div class="qa-list">
+          @for (q of item.hardSet; track q.question; let i = $index) {
+            <div class="qa-item">
+              <div class="qa-top">
+                <span class="num">{{ i + 1 }}</span>
+                <span class="difficulty hard">{{ q.difficulty | titlecase }}</span>
+              </div>
+              <p class="question">{{ q.question }}</p>
+              <p class="answer"><strong>Answer:</strong> {{ q.answer }}</p>
+            </div>
+          }
+        </div>
+      </article>
+    </section>
+  }
+} @else {
+  <section class="card">
+    <h2>Topic not found</h2>
+    <p>ไม่พบบทที่เลือก</p>
+  </section>
+}
