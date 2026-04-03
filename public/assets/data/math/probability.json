@@ -1,0 +1,208 @@
+{
+  "id": "probability",
+  "title": "Probability (Full Elite 30Q)",
+  "subject": "math",
+  "summary": [
+    "Probability measures the likelihood of an event and is a common source of short but tricky questions.",
+    "SPTG often tests counting, simple probability, complementary probability, and conditional-style reasoning in basic forms.",
+    "Harder variants may involve permutations, combinations, dependent events, and probability with restrictions."
+  ],
+  "coreConcepts": [
+    "Probability of an event = favorable outcomes / total outcomes, when outcomes are equally likely.",
+    "The probability of an impossible event is 0, and the probability of a certain event is 1.",
+    "Complementary probability is often the fastest method: P(not A) = 1 - P(A).",
+    "For independent events, multiply probabilities.",
+    "For mutually exclusive events, add probabilities.",
+    "Dependent events change the sample space after each selection.",
+    "Order matters in permutations but not in combinations.",
+    "Many probability questions are really counting questions in disguise.",
+    "Be careful to distinguish with replacement and without replacement.",
+    "A hidden trap is double counting overlapping cases."
+  ],
+  "derive": [
+    "If all outcomes are equally likely, probability is the ratio of favorable outcomes to total outcomes.",
+    "If event A and B are mutually exclusive, then P(A or B) = P(A) + P(B).",
+    "If event A and B are independent, then P(A and B) = P(A) × P(B).",
+    "If an event is easier to count through its opposite, use P(A) = 1 - P(not A).",
+    "Permutations count arrangements where order matters, so nPr = n! / (n-r)!",
+    "Combinations count selections where order does not matter, so nCr = n! / (r!(n-r)!)",
+    "Without replacement, probabilities in later draws depend on what happened before."
+  ],
+  "formulas": [
+    "P(A) = favorable outcomes / total outcomes",
+    "P(not A) = 1 - P(A)",
+    "P(A or B) = P(A) + P(B) if A and B are mutually exclusive",
+    "P(A and B) = P(A) × P(B) if A and B are independent",
+    "n! = n × (n-1) × (n-2) × ... × 1",
+    "0! = 1",
+    "nPr = n! / (n-r)!",
+    "nCr = n! / (r!(n-r)!)",
+    "P(A and then B without replacement) = multiply step by step with updated totals",
+    "Expected value (basic) = Σ[value × probability]"
+  ],
+  "traps": [
+    "Do not add probabilities unless the events are mutually exclusive.",
+    "Do not multiply probabilities unless the situation is an 'and' structure with stepwise selection or independence.",
+    "With replacement and without replacement are very different.",
+    "In combinations, order does not matter; in permutations, it does.",
+    "If a question asks 'at least one', the complement method is often easier.",
+    "Be careful not to count the same outcome twice in overlapping cases.",
+    "If outcomes are not equally likely, do not use simple favorable over total blindly."
+  ],
+  "sptgSet": [
+    {
+      "question": "A fair coin is tossed once. What is the probability of getting heads?",
+      "answer": "1/2",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A fair six-sided die is rolled once. What is the probability of getting a 4?",
+      "answer": "1/6",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A bag contains 3 red balls and 2 blue balls. One ball is drawn at random. What is the probability that it is red?",
+      "answer": "3/5",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Two fair coins are tossed. What is the probability of getting exactly one head?",
+      "answer": "1/2",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A fair die is rolled. What is the probability of getting an even number?",
+      "answer": "1/2",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A card is chosen from a standard deck of 52 cards. What is the probability that it is a king?",
+      "answer": "1/13",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A bag contains 4 white and 6 black balls. Two balls are drawn without replacement. What is the probability that both are white?",
+      "answer": "2/15",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A fair die is rolled twice. What is the probability that the sum is 7?",
+      "answer": "1/6",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A coin is tossed 3 times. What is the probability of getting at least one head?",
+      "answer": "7/8",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "From the digits 1, 2, 3, 4, one digit is chosen at random. What is the probability of choosing a prime number?",
+      "answer": "1/2",
+      "difficulty": "advanced"
+    }
+  ],
+  "hardSet": [
+    {
+      "question": "A box contains 5 red, 4 blue, and 3 green balls. One ball is drawn. What is the probability that it is not blue?",
+      "answer": "2/3",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A fair die is rolled twice. What is the probability that both numbers are odd?",
+      "answer": "1/4",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A bag contains 3 red and 5 blue balls. Two balls are drawn with replacement. What is the probability that both are red?",
+      "answer": "9/64",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A bag contains 3 red and 5 blue balls. Two balls are drawn without replacement. What is the probability that both are red?",
+      "answer": "3/28",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Three fair coins are tossed. What is the probability of getting exactly two heads?",
+      "answer": "3/8",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Three fair coins are tossed. What is the probability of getting at most one head?",
+      "answer": "1/2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A class has 6 boys and 4 girls. Two students are chosen at random. What is the probability that both are girls?",
+      "answer": "2/15",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A card is drawn from a 52-card deck. What is the probability that it is a heart or a face card?",
+      "answer": "11/26",
+      "difficulty": "hard"
+    },
+    {
+      "question": "From the digits 1, 2, 3, 4, 5, a number is formed by choosing one digit at random. What is the probability that the chosen digit is greater than 3?",
+      "answer": "2/5",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A fair die is rolled. What is the probability that the number is not a multiple of 3?",
+      "answer": "2/3",
+      "difficulty": "hard"
+    }
+  ],
+  "pat1Set": [
+    {
+      "question": "How many different 3-letter arrangements can be formed from the letters A, B, C, D, E?",
+      "answer": "60",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "How many ways can 3 students be chosen from 8 students?",
+      "answer": "56",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "A committee of 2 is formed from 5 men and 4 women. How many committees contain exactly one woman?",
+      "answer": "20",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "A fair die is rolled 3 times. What is the probability of getting no 6 at all?",
+      "answer": "125/216",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "A fair die is rolled 3 times. What is the probability of getting at least one 6?",
+      "answer": "91/216",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "From 5 red and 7 blue balls, 3 are chosen without replacement. What is the probability that exactly 2 are red?",
+      "answer": "35/88",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "How many 4-digit numbers can be formed from the digits 1, 2, 3, 4, 5 without repetition?",
+      "answer": "120",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "A number is chosen from 1 to 20. What is the probability that it is divisible by 2 or 5?",
+      "answer": "3/5",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Two cards are drawn from a standard deck without replacement. What is the probability that both are aces?",
+      "answer": "1/221",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "A fair coin is tossed 5 times. What is the probability of getting exactly 3 heads?",
+      "answer": "5/16",
+      "difficulty": "pat1"
+    }
+  ]
+}

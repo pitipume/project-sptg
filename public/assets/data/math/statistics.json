@@ -1,0 +1,206 @@
+{
+  "id": "statistics",
+  "title": "Statistics (Full Elite 30Q)",
+  "subject": "math",
+  "summary": [
+    "Statistics focuses on interpreting data, averages, spread, and distributions.",
+    "SPTG frequently tests mean, weighted average, median, and simple interpretation.",
+    "Harder problems involve algebra inside averages, combined groups, and variance concepts."
+  ],
+  "coreConcepts": [
+    "Mean (average) = total sum / number of items.",
+    "Median is the middle value when data is sorted.",
+    "Mode is the most frequent value.",
+    "Weighted average applies when different groups contribute unequally.",
+    "Adding/removing data changes the mean in predictable ways.",
+    "Combined mean depends on total sums, not just averaging means.",
+    "Range = max - min.",
+    "Variance measures spread around the mean.",
+    "Standard deviation is the square root of variance.",
+    "SPTG often hides algebra inside average problems."
+  ],
+  "derive": [
+    "Mean = (x1 + x2 + ... + xn)/n.",
+    "If mean = m, then total sum = m × n.",
+    "New mean after adding a value = (old sum + new value)/(n+1).",
+    "Combined mean = (sum1 + sum2)/(n1 + n2).",
+    "Variance = average of squared deviations from mean.",
+    "Standard deviation = √variance.",
+    "Weighted mean = (Σ(weight × value)) / Σ(weight)."
+  ],
+  "formulas": [
+    "Mean = Σx / n",
+    "Sum = mean × n",
+    "New mean after adding x = (old sum + x)/(n+1)",
+    "Combined mean = (n1m1 + n2m2)/(n1+n2)",
+    "Range = max - min",
+    "Variance = Σ(x - mean)^2 / n",
+    "Standard deviation = √variance",
+    "Weighted mean = Σ(wx)/Σw"
+  ],
+  "traps": [
+    "Do not average averages directly unless group sizes are equal.",
+    "Mean changes with adding/removing values — always recompute total.",
+    "Median depends on order, not values directly.",
+    "Outliers can heavily affect mean but not median.",
+    "Range depends only on extremes, not all data.",
+    "Weighted average problems often hide weights in words.",
+    "If total changes, always track sum, not just mean."
+  ],
+  "sptgSet": [
+    {
+      "question": "Find the mean of 2, 4, 6, 8.",
+      "answer": "5",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the median of 1, 3, 5, 7, 9.",
+      "answer": "5",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the range of 3, 8, 2, 10.",
+      "answer": "8",
+      "difficulty": "basic"
+    },
+    {
+      "question": "The mean of 5 numbers is 10. Find their total sum.",
+      "answer": "50",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The mean of 4 numbers is 6. A new number 10 is added. Find new mean.",
+      "answer": "6.8",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Find the mean of first 10 natural numbers.",
+      "answer": "5.5",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The mean of 6 numbers is 12. One number is removed and new mean is 10. Find removed number.",
+      "answer": "22",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Find median of 2, 5, 7, 9, 11, 13.",
+      "answer": "8",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Find weighted mean: scores 80 (weight 2), 90 (weight 3).",
+      "answer": "86",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Find mean if sum = 120 and n = 8.",
+      "answer": "15",
+      "difficulty": "advanced"
+    }
+  ],
+  "hardSet": [
+    {
+      "question": "Mean of 10 numbers is 15. Two numbers 10 and 20 are removed. Find new mean.",
+      "answer": "15",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Mean of 8 numbers is 12. One number 20 replaced by x. New mean is 13. Find x.",
+      "answer": "28",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Combined mean of group A (5 students, mean 10) and B (5 students, mean 20).",
+      "answer": "15",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Combined mean: group A (4, mean 10), group B (6, mean 20).",
+      "answer": "16",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find mean deviation conceptually if all values equal.",
+      "answer": "0",
+      "difficulty": "hard"
+    },
+    {
+      "question": "If all values increase by 5, how does mean change?",
+      "answer": "Increase by 5",
+      "difficulty": "hard"
+    },
+    {
+      "question": "If values are multiplied by 2, how does mean change?",
+      "answer": "Multiply by 2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find variance of identical values set.",
+      "answer": "0",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Mean of 5 numbers is 8. Add x to all values. New mean = 10. Find x.",
+      "answer": "2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "If mean is 20 and one value increases by 10, what happens to mean (n=5)?",
+      "answer": "Increase by 2",
+      "difficulty": "hard"
+    }
+  ],
+  "pat1Set": [
+    {
+      "question": "Find mean of first n natural numbers.",
+      "answer": "(n+1)/2",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Sum of squares 1^2 + ... + n^2 formula.",
+      "answer": "n(n+1)(2n+1)/6",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Variance formula expanded.",
+      "answer": "E(x^2) - (E(x))^2",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Mean of arithmetic sequence.",
+      "answer": "(first + last)/2",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "If mean = 10, variance = 9, find std dev.",
+      "answer": "3",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Weighted mean with different group sizes.",
+      "answer": "use formula",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "If variance increases, what happens to spread?",
+      "answer": "increases",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Median vs mean when outlier exists.",
+      "answer": "median more stable",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "If all values same, variance?",
+      "answer": "0",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Find mean after removing extreme value.",
+      "answer": "recompute sum",
+      "difficulty": "pat1"
+    }
+  ]
+}

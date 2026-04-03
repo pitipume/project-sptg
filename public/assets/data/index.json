@@ -29,6 +29,36 @@
       "title": "Trigonometry",
       "subject": "math",
       "summary": "sin, cos, tan, special angles, and right-triangle applications."
+    },
+    {
+      "id": "geometry",
+      "title": "Geometry (Full Elite 30Q)",
+      "subject": "math",
+      "summary": "Triangles, circles, similarity, coordinate geometry, tangent, and PAT1-lite geometry."
+    },
+    {
+      "id": "log",
+      "title": "Logarithm (Full Elite 30Q)",
+      "subject": "math",
+      "summary": "Definitions, laws, change of base, equations, traps, and PAT1-lite logarithms."
+    },
+    {
+      "id": "probability",
+      "title": "Probability (Full Elite 30Q)",
+      "subject": "math",
+      "summary": "Basic probability, complement, counting, combinations, permutations, and PAT1-lite problems."
+    },
+    {
+      "id": "statistics",
+      "title": "Statistics (Full Elite 30Q)",
+      "subject": "math",
+      "summary": "Mean, median, weighted average, variance, traps, and algebra-based statistics."
+    },
+    {
+      "id": "sequence",
+      "title": "Sequence (Full Elite 30Q)",
+      "subject": "math",
+      "summary": "Arithmetic and geometric sequences, nth term, sums, recursion, and PAT1-lite sequence problems."
     }
   ],
   "physics": [

@@ -1,0 +1,284 @@
+{
+  "id": "geometry",
+  "title": "Geometry (Full Elite 30Q)",
+  "subject": "math",
+  "summary": [
+    "This topic is highly relevant for SPTG and often appears through triangles, circles, coordinate geometry, similarity, and area reasoning.",
+    "The most important skill is turning a figure or word description into a usable relationship such as area, angle, ratio, or distance.",
+    "SPTG usually tests practical geometry, while harder variants may extend toward circle theorems, coordinate methods, and PAT1-style reasoning."
+  ],
+  "coreConcepts": [
+    "The sum of angles in a triangle is 180°.",
+    "The exterior angle of a triangle equals the sum of the two remote interior angles.",
+    "In a right triangle, the Pythagorean theorem relates the three sides.",
+    "Special right triangles such as 45-45-90 and 30-60-90 appear often.",
+    "Similar triangles have equal corresponding angles and proportional corresponding sides.",
+    "If two triangles are similar with side ratio a:b, then area ratio is a^2:b^2.",
+    "A circle is fully determined by its center and radius.",
+    "A radius to a tangent is perpendicular to the tangent.",
+    "Equal chords subtend equal central angles.",
+    "An angle subtended by a diameter in a semicircle is 90°.",
+    "Coordinate geometry turns geometry into algebra using slope, midpoint, and distance.",
+    "Parallel lines have equal slopes, perpendicular lines have product of slopes -1 when defined.",
+    "Distance from a point to a line can be used in many optimization or shortest-distance problems.",
+    "Area can often be found more efficiently through decomposition than memorization.",
+    "Geometry questions often combine multiple ideas: similarity plus area, or circle plus tangent, or coordinate plus algebra."
+  ],
+  "derive": [
+    "Triangle area comes from rectangle area: triangle area = (1/2) × base × height.",
+    "Pythagorean theorem gives a^2 + b^2 = c^2 in a right triangle.",
+    "Distance formula is derived from Pythagorean theorem: distance = sqrt((x2-x1)^2 + (y2-y1)^2).",
+    "Midpoint is found by averaging x-coordinates and y-coordinates separately.",
+    "Slope is rise over run, so slope = (y2-y1)/(x2-x1).",
+    "Circumference comes from how many radii fit around a circle: C = 2πr.",
+    "Circle area is proportional to the square of the radius: A = πr^2.",
+    "Arc length in radians is radius × angle, so s = rθ.",
+    "Sector area in radians is the corresponding fraction of full circle area, so area = (1/2)r^2θ.",
+    "If triangles are similar, each side scales by k, so area scales by k^2.",
+    "Law of Sines compares side length to sine of opposite angle.",
+    "Law of Cosines generalizes Pythagorean theorem to non-right triangles."
+  ],
+  "formulas": [
+    "Triangle angle sum = 180°",
+    "Exterior angle = sum of two remote interior angles",
+    "Area of triangle = (1/2)bh",
+    "Pythagorean theorem: a^2 + b^2 = c^2",
+    "45-45-90 triangle side ratio = 1:1:√2",
+    "30-60-90 triangle side ratio = 1:√3:2",
+    "Area of rectangle = lw",
+    "Area of parallelogram = bh",
+    "Area of trapezoid = (1/2)(a+b)h",
+    "Area of circle = πr^2",
+    "Circumference = 2πr",
+    "Arc length = rθ  (θ in radians)",
+    "Sector area = (1/2)r^2θ  (θ in radians)",
+    "Distance = √[(x2-x1)^2 + (y2-y1)^2]",
+    "Midpoint = ((x1+x2)/2, (y1+y2)/2)",
+    "Slope = (y2-y1)/(x2-x1)",
+    "Equation of circle center (h,k), radius r: (x-h)^2 + (y-k)^2 = r^2",
+    "Area ratio of similar figures = square of side ratio",
+    "Volume ratio of similar solids = cube of side ratio",
+    "Law of Sines: a/sinA = b/sinB = c/sinC",
+    "Law of Cosines: c^2 = a^2 + b^2 - 2ab cosC",
+    "Heron's formula: Area = √[s(s-a)(s-b)(s-c)], where s = (a+b+c)/2",
+    "Point-to-line distance: |Ax0 + By0 + C| / √(A^2 + B^2)"
+  ],
+  "traps": [
+    "Do not assume average of two side lengths or two speeds gives the correct geometry result.",
+    "In similar triangles, side ratio and area ratio are not the same.",
+    "A tangent is perpendicular to the radius only at the point of tangency.",
+    "Angle in a semicircle is 90°, but not every angle inside a circle is 90°.",
+    "Arc length and sector area formulas require radians.",
+    "Distance between two points is not |x2-x1| + |y2-y1|.",
+    "Parallel lines have equal slopes; perpendicular lines do not simply have opposite signs in all cases.",
+    "When solving coordinate geometry, always check if a line is vertical or horizontal before using slope formulas.",
+    "Law of Cosines is often the correct tool when a triangle is not right-angled.",
+    "Figures may look to scale but should not be trusted visually."
+  ],
+  "sptgSet": [
+    {
+      "question": "Find the area of a triangle with base 12 and height 5.",
+      "answer": "30",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A right triangle has legs 6 and 8. Find the hypotenuse.",
+      "answer": "10",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the circumference of a circle with radius 4.",
+      "answer": "8π",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the area of a circle with radius 3.",
+      "answer": "9π",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the slope of the line through (2,1) and (6,9).",
+      "answer": "2",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Find the distance between (1,2) and (4,6).",
+      "answer": "5",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Find the midpoint of the segment joining (2,5) and (8,1).",
+      "answer": "(5,3)",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Two similar triangles have side ratio 2:3. If the area of the smaller is 20, find the area of the larger.",
+      "answer": "45",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A radius is drawn to a tangent line at the point of contact. What is the angle between them?",
+      "answer": "90°",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Find the equation of a circle centered at (0,0) with radius 5.",
+      "answer": "x^2 + y^2 = 25",
+      "difficulty": "advanced"
+    }
+  ],
+  "hardSet": [
+    {
+      "question": "A triangle has sides 13, 14, and 15. Find its area.",
+      "answer": "84",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the area of a trapezoid with parallel sides 8 and 14 and height 6.",
+      "answer": "66",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 30-60-90 triangle has hypotenuse 12. Find the shorter leg and longer leg.",
+      "answer": "6 and 6√3",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A 45-45-90 triangle has leg length 7. Find the hypotenuse.",
+      "answer": "7√2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the equation of the line through (1,3) with slope -2.",
+      "answer": "y = -2x + 5",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the slope of a line perpendicular to the line through (0,0) and (4,2).",
+      "answer": "-2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A circle has center (2,-1) and radius 3. Write its equation.",
+      "answer": "(x-2)^2 + (y+1)^2 = 9",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the arc length of a circle with radius 6 and central angle π/3.",
+      "answer": "2π",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the area of a sector with radius 8 and central angle π/4.",
+      "answer": "8π",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A chord is 8 units long in a circle of radius 5. The perpendicular from the center bisects the chord. Find the distance from the center to the chord.",
+      "answer": "3",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The point (3,4) lies on a circle centered at the origin. Find the radius and equation of the circle.",
+      "answer": "Radius = 5, equation: x^2 + y^2 = 25",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A rectangle has diagonal 10 and one side 6. Find the other side and area.",
+      "answer": "Other side = 8, area = 48",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Two similar polygons have side ratio 3:5. If the smaller area is 72, find the larger area.",
+      "answer": "200",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The angle subtended by a diameter at the circumference is what?",
+      "answer": "90°",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A tangent from an external point touches a circle. If the radius to the tangent point is 9 and the distance from the external point to the center is 15, find the tangent length.",
+      "answer": "12",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the point of intersection of y = x + 2 and y = -x + 6.",
+      "answer": "(2,4)",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the distance from point (1,2) to the x-axis.",
+      "answer": "2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the distance from point (1,2) to the y-axis.",
+      "answer": "1",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A triangle has sides 7 and 9 with included angle 60°. Find its area.",
+      "answer": "(63√3)/4",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Use the Law of Cosines to find the third side of a triangle with sides 5 and 7 and included angle 60°.",
+      "answer": "√39",
+      "difficulty": "hard"
+    }
+  ],
+  "pat1Set": [
+    {
+      "question": "Find the distance from point (2,-1) to the line 3x - 4y + 5 = 0.",
+      "answer": "3",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Find the equation of the perpendicular bisector of the segment joining (0,0) and (4,2).",
+      "answer": "y = -2x + 5",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Find the centroid of the triangle with vertices (0,0), (6,0), and (0,9).",
+      "answer": "(2,3)",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Find the area of the triangle with vertices (1,1), (5,1), and (3,4).",
+      "answer": "6",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "A tangent is drawn to the circle x^2 + y^2 = 25 at point (3,4). Find the tangent equation.",
+      "answer": "3x + 4y = 25",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Find the locus of points equidistant from (0,0) and (6,0).",
+      "answer": "x = 3",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "A line with slope 1 touches the circle x^2 + y^2 = 2. Find one tangent line.",
+      "answer": "y = x + 2 or y = x - 2",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "Use the Law of Sines to find side a if A = 30°, B = 45°, and b = 6.",
+      "answer": "2√2",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "A triangle has sides 8, 10, and 12. Find the largest angle using the Law of Cosines.",
+      "answer": "Largest angle opposite side 12 with cos C = 7/40",
+      "difficulty": "pat1"
+    },
+    {
+      "question": "If two similar solids have side ratio 2:5, what is the volume ratio?",
+      "answer": "8:125",
+      "difficulty": "pat1"
+    }
+  ]
+}
