@@ -1,25 +1,26 @@
 {
   "id": "speed-distance-time",
-  "title": "Speed / Distance / Time",
+  "title": "Speed / Distance / Time (Fast Trap)",
   "subject": "math",
   "summary": [
-    "This topic focuses on motion, travel time, relative speed, and average speed.",
-    "SPTG usually tests practical word problems rather than difficult theory.",
-    "Common traps include average speed, same direction vs opposite direction, and unit conversion."
+    "This is one of the most useful SPTG topics because it appears in direct travel, catch-up, meeting, and average-speed problems.",
+    "The math is usually simple, but the wording often causes mistakes.",
+    "The most important ideas are distance = speed × time, relative speed, average speed, and correct unit conversion."
   ],
   "coreConcepts": [
-    "Distance = speed × time is the main foundation of the whole topic.",
-    "Average speed must be total distance divided by total time, not always the average of two speeds.",
-    "Relative speed is added when objects move toward each other and subtracted when they move in the same direction.",
-    "Units must be consistent, such as km/h with hours or m/s with seconds.",
-    "Round-trip questions often trap students into using the wrong average-speed method."
+    "Distance = speed × time is the base of the whole topic.",
+    "Average speed is total distance divided by total time, not the average of speeds unless conditions happen to match.",
+    "When two objects move toward each other, relative speed is the sum of their speeds.",
+    "When two objects move in the same direction, relative speed is the difference of their speeds.",
+    "Round-trip average speed is not found by simply averaging the two speeds.",
+    "Always make units consistent before solving."
   ],
   "derive": [
-    "Speed means distance traveled per unit time, so speed = distance / time.",
+    "Speed is distance per unit time, so speed = distance / time.",
     "Rearranging gives distance = speed × time.",
     "Rearranging again gives time = distance / speed.",
-    "Average speed is defined as total distance divided by total time.",
-    "For relative speed, the change in distance between objects determines whether to add or subtract speeds."
+    "Average speed is defined by total distance divided by total time.",
+    "Relative speed measures how fast the gap changes: add if objects move toward each other, subtract if they move in the same direction."
   ],
   "formulas": [
     "d = vt",
@@ -33,28 +34,116 @@
     "1 km/h = 5/18 m/s",
     "1 m/s = 18/5 km/h"
   ],
+  "traps": [
+    "Do not average two speeds directly unless the travel times are equal.",
+    "For equal distances, use total distance / total time or the round-trip formula.",
+    "In catch-up problems, use relative speed, not total speed.",
+    "In meeting problems, use sum of speeds.",
+    "Minutes must be converted into hours if speed is in km/h.",
+    "A faster return speed does not mean the overall average is the simple midpoint."
+  ],
   "sptgSet": [
-    { "question": "A car travels at 60 km/h for 2 hours. How far does it travel?", "answer": "120 km", "difficulty": "basic" },
-    { "question": "A person walks 10 km in 2 hours. Find the average speed.", "answer": "5 km/h", "difficulty": "basic" },
-    { "question": "A bus travels 150 km at 50 km/h. How long does it take?", "answer": "3 hours", "difficulty": "basic" },
-    { "question": "Two trains move toward each other at 40 km/h and 60 km/h. If they are 300 km apart, how long before they meet?", "answer": "3 hours", "difficulty": "intermediate" },
-    { "question": "Two runners move in the same direction at 12 km/h and 8 km/h. If the faster runner starts 20 km behind, how long to catch up?", "answer": "5 hours", "difficulty": "intermediate" },
-    { "question": "A car goes 100 km at 50 km/h and another 100 km at 100 km/h. Find the average speed for the whole trip.", "answer": "66.67 km/h", "difficulty": "intermediate" },
-    { "question": "A train travels at 72 km/h. Convert this speed to m/s.", "answer": "20 m/s", "difficulty": "intermediate" },
-    { "question": "A man drives from city A to B at 60 km/h and returns at 40 km/h. Find the average speed for the whole journey.", "answer": "48 km/h", "difficulty": "advanced" },
-    { "question": "A boat travels 30 km downstream in 2 hours and returns upstream in 3 hours. Find the speed of the boat in still water.", "answer": "12.5 km/h", "difficulty": "advanced" },
-    { "question": "Two cyclists start from the same point in opposite directions at 15 km/h and 25 km/h. How far apart will they be after 3 hours?", "answer": "120 km", "difficulty": "advanced" }
+    {
+      "question": "A car travels at 60 km/h for 2 hours. How far does it travel?",
+      "answer": "120 km",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A person walks 12 km in 3 hours. Find the average speed.",
+      "answer": "4 km/h",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A bus travels 180 km at 60 km/h. How long does it take?",
+      "answer": "3 hours",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Two trains move toward each other at 40 km/h and 50 km/h. They are 270 km apart. When will they meet?",
+      "answer": "3 hours",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Two runners move in the same direction at 14 km/h and 9 km/h. If the faster runner starts 15 km behind, how long will it take to catch up?",
+      "answer": "3 hours",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Convert 72 km/h to m/s.",
+      "answer": "20 m/s",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Convert 15 m/s to km/h.",
+      "answer": "54 km/h",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A car goes from A to B at 60 km/h and returns at 40 km/h. Find the average speed for the whole trip.",
+      "answer": "48 km/h",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A cyclist rides 30 km at 15 km/h and then 20 km at 10 km/h. Find the total average speed.",
+      "answer": "12.5 km/h",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Two cyclists start from the same point in opposite directions at 12 km/h and 18 km/h. How far apart are they after 4 hours?",
+      "answer": "120 km",
+      "difficulty": "advanced"
+    }
   ],
   "hardSet": [
-    { "question": "A car covers the first half of a journey at 40 km/h and the second half at 60 km/h. Find the average speed for the whole trip.", "answer": "48 km/h", "difficulty": "hard" },
-    { "question": "A train travels 120 km at 60 km/h and then 180 km at 90 km/h. Find its average speed for the entire trip.", "answer": "75 km/h", "difficulty": "hard" },
-    { "question": "Two cars are 420 km apart and drive toward each other at 50 km/h and 70 km/h. After how many hours will they be 60 km apart?", "answer": "3 hours", "difficulty": "hard" },
-    { "question": "Two runners move around a circular track in the same direction at 10 m/s and 6 m/s. If the track length is 400 m, how long until the faster runner laps the slower runner once?", "answer": "100 s", "difficulty": "hard" },
-    { "question": "A man walks to a town at 5 km/h and returns along the same route at 3 km/h. Find his average speed for the round trip.", "answer": "3.75 km/h", "difficulty": "hard" },
-    { "question": "A bus leaves at 8:00 AM at 40 km/h. Another bus leaves the same point at 10:00 AM at 60 km/h in the same direction. At what time will the second bus catch the first?", "answer": "2:00 PM", "difficulty": "hard" },
-    { "question": "A river current flows at 3 km/h. A boat moves at 15 km/h in still water. Find the downstream and upstream speeds.", "answer": "18 km/h downstream, 12 km/h upstream", "difficulty": "hard" },
-    { "question": "A cyclist travels for 2 hours at 20 km/h, then for 1.5 hours at 16 km/h. Find the total distance and average speed.", "answer": "64 km, 18.29 km/h", "difficulty": "hard" },
-    { "question": "A car travels 240 km. If it increases speed by 20 km/h, the trip takes 1 hour less. Find the original speed.", "answer": "60 km/h", "difficulty": "hard" },
-    { "question": "A person travels from A to B partly by walking and partly by bus. He walks 6 km at 4 km/h, then takes a bus for 30 km at 36 km/h. Find the average speed for the entire trip.", "answer": "15.43 km/h", "difficulty": "hard" }
+    {
+      "question": "A car covers the first half of a journey at 40 km/h and the second half at 60 km/h. Find the average speed for the whole journey.",
+      "answer": "48 km/h",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A man walks to a town at 5 km/h and returns along the same route at 3 km/h. Find the average speed for the round trip.",
+      "answer": "3.75 km/h",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A bus leaves at 8:00 AM at 40 km/h. Another bus leaves the same point at 10:00 AM at 60 km/h in the same direction. At what time does the second bus catch the first?",
+      "answer": "2:00 PM",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A river current is 3 km/h. A boat moves at 15 km/h in still water. Find the downstream speed.",
+      "answer": "18 km/h",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A river current is 3 km/h. A boat moves at 15 km/h in still water. Find the upstream speed.",
+      "answer": "12 km/h",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A car travels 240 km. If it increases its speed by 20 km/h, the trip takes 1 hour less. Find the original speed.",
+      "answer": "60 km/h",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A cyclist travels for 2 hours at 20 km/h, then for 1.5 hours at 16 km/h. Find the average speed for the whole trip.",
+      "answer": "18.29 km/h",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Two cars are 420 km apart and drive toward each other at 50 km/h and 70 km/h. After how many hours will they be 60 km apart?",
+      "answer": "3 hours",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A train moves at 72 km/h. How far does it travel in 25 minutes?",
+      "answer": "30 km",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A person travels 6 km by walking at 4 km/h and then 30 km by bus at 36 km/h. Find the average speed for the entire trip.",
+      "answer": "15.43 km/h",
+      "difficulty": "hard"
+    }
   ]
 }

@@ -1,51 +1,59 @@
 {
   "id": "mixture",
-  "title": "Mixture",
+  "title": "Mixture (Fast Trap)",
   "subject": "math",
   "summary": [
-    "Mixture problems deal with combining solutions with different concentrations.",
-    "SPTG focuses on percentage, ratio, and conservation concepts.",
-    "Key traps include confusing volume vs concentration and incorrect averaging."
+    "Mixture problems in SPTG usually test concentration, dilution, weighted average, and conservation of the main substance.",
+    "The algebra is not difficult, but many students lose points by averaging percentages incorrectly.",
+    "The most important idea is that the amount of pure substance is tracked, not just the total liquid."
   ],
   "coreConcepts": [
-    "Total substance is conserved when mixing.",
-    "Final concentration depends on weighted average, not simple average.",
-    "Use equation: total solute before = total solute after.",
-    "Let unknown concentration be x and solve using equation.",
-    "Water addition reduces concentration but keeps solute constant."
+    "Amount of pure substance = concentration × volume.",
+    "When two solutions are mixed, total pure substance is the sum of the pure substance from each part.",
+    "Final concentration = total pure substance / total volume.",
+    "When water is added, the amount of pure substance stays the same but the total volume increases.",
+    "When some solution is removed, both pure substance and total volume are reduced proportionally.",
+    "Do not average concentrations directly unless the volumes are equal."
   ],
   "derive": [
-    "If solution A has concentration c1 and volume v1, solute = c1 × v1",
-    "If solution B has concentration c2 and volume v2, solute = c2 × v2",
-    "Total solute = c1v1 + c2v2",
-    "Final concentration = (total solute) / (total volume)",
-    "If adding water: solute stays constant but volume increases"
+    "If a solution has concentration c and volume v, then pure substance = cv.",
+    "If two solutions are mixed, total pure substance = c1v1 + c2v2.",
+    "Total volume after mixing = v1 + v2.",
+    "Therefore final concentration = (c1v1 + c2v2) / (v1 + v2).",
+    "If only water is added, pure substance stays constant, so old concentration × old volume = new concentration × new volume."
   ],
   "formulas": [
-    "solute = concentration × volume",
-    "total solute = sum of individual solutes",
-    "final concentration = total solute / total volume",
+    "pure substance = concentration × volume",
+    "final concentration = total pure substance / total volume",
     "c_final = (c1v1 + c2v2) / (v1 + v2)",
-    "dilution: c1v1 = c2v2"
+    "dilution formula: c1v1 = c2v2",
+    "if x liters are removed from a uniform solution, the same fraction of pure substance is removed"
+  ],
+  "traps": [
+    "Do not take the simple average of two percentages unless the volumes are equal.",
+    "Adding water changes total volume but not pure substance.",
+    "If some liquid is removed first, the removed part contains both water and solute in the same proportion as the mixture.",
+    "Watch out for whether the question asks for final concentration, added water, or original volume.",
+    "Percent must be converted consistently in equations."
   ],
   "sptgSet": [
     {
-      "question": "Mix 10 L of 20% solution with 10 L of 40%. Find final concentration.",
+      "question": "Mix 10 L of 20% solution with 10 L of 40% solution. Find the final concentration.",
       "answer": "30%",
       "difficulty": "basic"
     },
     {
-      "question": "Mix 5 L of 10% with 15 L of 30%. Find final concentration.",
-      "answer": "25%",
-      "difficulty": "basic"
-    },
-    {
-      "question": "A 20% solution has 50 L. How much solute is there?",
+      "question": "A 20% solution has volume 50 L. How much pure substance does it contain?",
       "answer": "10 L",
       "difficulty": "basic"
     },
     {
-      "question": "Mix 8 L of 25% and 12 L of 50%. Find final concentration.",
+      "question": "Mix 5 L of 10% solution with 15 L of 30% solution. Find the final concentration.",
+      "answer": "25%",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Mix 8 L of 25% solution with 12 L of 50% solution. Find the final concentration.",
       "answer": "40%",
       "difficulty": "intermediate"
     },
@@ -55,79 +63,79 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "Mix x L of 20% with 10 L of 50% to get 30%. Find x.",
+      "question": "Mix x L of 20% solution with 10 L of 50% solution to get 30%. Find x.",
       "answer": "20 L",
       "difficulty": "intermediate"
     },
     {
-      "question": "A 30% solution becomes 20% after adding 5 L of water. Find original volume.",
+      "question": "A 30% solution becomes 20% after adding 5 L of water. Find the original volume.",
       "answer": "10 L",
       "difficulty": "advanced"
     },
     {
-      "question": "Mix 10 L of 10% with x L of 50% to get 30%. Find x.",
+      "question": "Mix 10 L of 10% solution with x L of 50% solution to get 30%. Find x.",
       "answer": "10 L",
       "difficulty": "advanced"
     },
     {
-      "question": "Remove 5 L from 20 L of 40% solution and replace with water. Find new concentration.",
+      "question": "Remove 5 L from 20 L of 40% solution and replace it with water. Find the new concentration.",
       "answer": "30%",
       "difficulty": "advanced"
     },
     {
-      "question": "Mix equal volumes of 20% and 60%. Find final concentration.",
+      "question": "Mix equal volumes of 20% and 60% solutions. Find the final concentration.",
       "answer": "40%",
       "difficulty": "advanced"
     }
   ],
   "hardSet": [
     {
-      "question": "Mix 10 L of 20% with 30 L of x% to get 35%. Find x.",
+      "question": "Mix 10 L of 20% solution with 30 L of x% solution to get 35%. Find x.",
       "answer": "40%",
       "difficulty": "hard"
     },
     {
-      "question": "A tank has 40 L of 25% solution. 10 L is removed and replaced with water. Find new concentration.",
+      "question": "A tank contains 40 L of 25% solution. If 10 L is removed and replaced with water, find the new concentration.",
       "answer": "18.75%",
       "difficulty": "hard"
     },
     {
-      "question": "Mix 15 L of 30% with 25 L of 50%. Find final concentration.",
+      "question": "Mix 15 L of 30% solution with 25 L of 50% solution. Find the final concentration.",
       "answer": "42.5%",
       "difficulty": "hard"
     },
     {
-      "question": "A solution is 60% alcohol. After adding 20 L of water, it becomes 30%. Find original volume.",
+      "question": "A solution is 60% alcohol. After adding 20 L of water, it becomes 30% alcohol. Find the original volume.",
       "answer": "20 L",
       "difficulty": "hard"
     },
     {
-      "question": "Remove 20% of a solution and replace with water. Repeat twice. Find final concentration if initial was 50%.",
+      "question": "Remove 20% of a 50% solution and replace it with water. Repeat this process twice. Find the final concentration.",
       "answer": "32%",
       "difficulty": "hard"
     },
     {
-      "question": "Mix solutions in ratio 2:3 with concentrations 10% and 40%. Find final concentration.",
+      "question": "Two solutions have concentrations 10% and 40% and are mixed in the ratio 2:3. Find the final concentration.",
       "answer": "28%",
       "difficulty": "hard"
     },
     {
-      "question": "A solution is diluted from 40% to 25% by adding 30 L of water. Find original volume.",
+      "question": "A solution is diluted from 40% to 25% by adding 30 L of water. Find the original volume.",
       "answer": "50 L",
       "difficulty": "hard"
     },
     {
-      "question": "Two solutions have concentrations 20% and 80%. In what ratio should they be mixed to get 50%?",
+      "question": "Two solutions have concentrations 20% and 80%. In what ratio should they be mixed to obtain 50%?",
       "answer": "1:1",
       "difficulty": "hard"
     },
     {
-      "question": "A container has 100 L of 30%. 20 L is removed and replaced with 60%. Find new concentration.",
+      "question": "A container has 100 L of 30% solution. If 20 L is removed and replaced with 60% solution, find the new concentration.",
       "answer": "36%",
       "difficulty": "hard"
     },
     {
-      "question": "Mix x L of 20% and y L of 60% to get 40%. What is the ratio x:y?",
+      "question": "Mix x L of 20% solution and y L of 60% solution to obtain 40%. Find the ratio x:y.",
       "answer": "1:1",
       "difficulty": "hard"
     }

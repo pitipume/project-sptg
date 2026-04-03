@@ -1,50 +1,145 @@
 {
   "id": "ratio-proportion",
-  "title": "Ratio & Proportion",
+  "title": "Ratio & Proportion (Fast Trap)",
   "subject": "math",
   "summary": [
-    "Ratio compares quantities.",
-    "Proportion states that two ratios are equal.",
-    "SPTG likes split, combine, and change-in-ratio problems."
+    "Ratio and proportion are very common in SPTG because they connect directly to splitting, scaling, comparison, and word problems.",
+    "Most questions are easy in structure but tricky in translation.",
+    "The most important skills are converting ratio into actual values, combining ratios, and handling changes in ratio after adding or removing quantities."
   ],
   "coreConcepts": [
-    "a:b means a/b",
-    "Use k to represent ratio parts",
-    "If a:b = c:d, then ad = bc",
-    "To combine ratios, make the common term equal first"
+    "A ratio compares quantities, so a:b means a/b.",
+    "If A:B = m:n, then A = mk and B = nk for some constant k.",
+    "A proportion means two ratios are equal.",
+    "To combine ratios such as A:B and B:C, make the common term equal first.",
+    "When values are added or removed, the ratio may change and usually requires forming an equation.",
+    "In many SPTG questions, the trap is not the arithmetic but translating the wording correctly."
   ],
   "derive": [
-    "If A:B = 2:3, let A = 2k and B = 3k",
-    "If total = 50, then 5k = 50 so k = 10",
-    "If a/b = c/d, cross multiply to get ad = bc"
+    "If A:B = 2:3, let A = 2k and B = 3k.",
+    "If total = 50, then 2k + 3k = 50, so 5k = 50 and k = 10.",
+    "Thus A = 20 and B = 30.",
+    "If a:b = c:d, then a/b = c/d, so cross-multiplying gives ad = bc.",
+    "If A:B = 2:3 and B:C = 4:5, first make B equal by scaling to get A:B = 8:12 and B:C = 12:15, so A:B:C = 8:12:15."
   ],
   "formulas": [
-    "part = (ratio part / total ratio) × total",
-    "a:b = c:d => ad = bc",
-    "If A:B and B:C are given, equalize B before combining"
+    "a:b = a/b",
+    "If A:B = m:n, let A = mk and B = nk",
+    "Part from ratio = (ratio part / total ratio) × total",
+    "If a:b = c:d, then ad = bc",
+    "To combine A:B and B:C, equalize B first",
+    "If side ratio = m:n, area ratio = m^2:n^2 for similar figures"
+  ],
+  "traps": [
+    "Do not add ratios directly unless they refer to the same scale.",
+    "When combining two ratios, always equalize the common term first.",
+    "If total is given, use k-model immediately instead of guessing.",
+    "If the ratio changes after adding or removing values, do not keep using the old k.",
+    "A ratio of 2:3 does not mean the difference is 1 unit unless k is known.",
+    "In geometry-style ratio questions, side ratio and area ratio are different."
   ],
   "sptgSet": [
-    { "question": "A:B = 2:3, total = 50. Find A.", "answer": "20", "difficulty": "basic" },
-    { "question": "A:B:C = 1:2:3, total = 60. Find B.", "answer": "20", "difficulty": "basic" },
-    { "question": "A:B = 4:5. If A = 20, find B.", "answer": "25", "difficulty": "basic" },
-    { "question": "A:B = 2:3 and B:C = 4:5. Find A:C.", "answer": "8:15", "difficulty": "intermediate" },
-    { "question": "Divide 100 in the ratio 2:3:5.", "answer": "20, 30, 50", "difficulty": "intermediate" },
-    { "question": "A:B = 3:4, total = 140. Find A.", "answer": "60", "difficulty": "intermediate" },
-    { "question": "A:B = 5:7, difference = 20. Find A.", "answer": "50", "difficulty": "intermediate" },
-    { "question": "A:B = 2:3. After adding 10 to both, ratio becomes 3:4. Find A.", "answer": "20", "difficulty": "advanced" },
-    { "question": "A:B = 3:5. After removing 6 from A, ratio becomes 1:2. Find A.", "answer": "15", "difficulty": "advanced" },
-    { "question": "A:B = 4:5 and B:C = 6:7. Find A:B:C.", "answer": "24:30:35", "difficulty": "advanced" }
+    {
+      "question": "A:B = 2:3 and A + B = 25. Find A.",
+      "answer": "10",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A:B:C = 1:2:3 and the total is 60. Find C.",
+      "answer": "30",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A:B = 4:5. If A = 20, find B.",
+      "answer": "25",
+      "difficulty": "basic"
+    },
+    {
+      "question": "A:B = 3:7 and the total is 50. Find B.",
+      "answer": "35",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A:B = 5:8 and the difference is 12. Find A.",
+      "answer": "20",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A:B = 2:3 and B:C = 4:5. Find A:C.",
+      "answer": "8:15",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Divide 96 in the ratio 3:5.",
+      "answer": "36 and 60",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A:B:C = 2:3:5 and the total is 200. Find B.",
+      "answer": "60",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "If A:B = 4:7 and B:C = 2:3, find A:B:C.",
+      "answer": "8:14:21",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "If two similar triangles have side ratio 2:3, find the area ratio.",
+      "answer": "4:9",
+      "difficulty": "advanced"
+    }
   ],
   "hardSet": [
-    { "question": "A:B = 3:4 and B:C = 5:6. Find A:C.", "answer": "15:24", "difficulty": "hard" },
-    { "question": "A:B = 2:3, A+C = 50, B+C = 70. Find C.", "answer": "10", "difficulty": "hard" },
-    { "question": "A:B = 4:5 and (A−10):(B−10) = 2:3. Find A.", "answer": "40", "difficulty": "hard" },
-    { "question": "The ratio of boys to girls is 3:2. If 20% of boys leave, find the new ratio.", "answer": "12:10 or 6:5", "difficulty": "hard" },
-    { "question": "A:B = 2:3. If A is doubled, find the new ratio.", "answer": "4:3", "difficulty": "hard" },
-    { "question": "A:B:C = 2:3:5. Add 10 to each. Is the ratio preserved?", "answer": "No", "difficulty": "hard" },
-    { "question": "A:B = 3:4 and A+B = 140. After adding x to both, ratio becomes 4:5. Find x.", "answer": "70", "difficulty": "hard" },
-    { "question": "A:B = 5:6 and (A+5):(B−5) = 1:1. Find A.", "answer": "25", "difficulty": "hard" },
-    { "question": "A:B = 2:3, B:C = 3:4, C:D = 4:5. Find A:D.", "answer": "2:5", "difficulty": "hard" },
-    { "question": "A:B = 3:5 and (A+10):(B+10) = 4:7. Find A.", "answer": "30", "difficulty": "hard" }
+    {
+      "question": "A:B = 2:3. After adding 10 to both, the ratio becomes 3:4. Find A.",
+      "answer": "20",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A:B = 3:5. After removing 6 from A, the ratio becomes 1:2. Find A.",
+      "answer": "15",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A:B = 4:5. If A decreases by 4 and B increases by 5, the ratio becomes 2:3. Find A.",
+      "answer": "16",
+      "difficulty": "hard"
+    },
+    {
+      "question": "The ratio of boys to girls is 3:2. If 20% of the boys leave, find the new ratio of boys to girls.",
+      "answer": "6:5",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A:B = 2:3. If A is doubled, find the new ratio A:B.",
+      "answer": "4:3",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A:B = 5:7 and A+B = 144. Find the larger number.",
+      "answer": "84",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A:B = 2:3 and A+C = 50, B+C = 70. Find C.",
+      "answer": "10",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A:B = 4:5 and B:C = 6:7. Find A:B:C.",
+      "answer": "24:30:35",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A:B = 3:4 and A+B = 140. After adding x to both numbers, the ratio becomes 4:5. Find x.",
+      "answer": "70",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A:B = 5:6 and (A+5):(B-5) = 1:1. Find A.",
+      "answer": "25",
+      "difficulty": "hard"
+    }
   ]
 }
