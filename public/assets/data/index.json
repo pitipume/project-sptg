@@ -59,6 +59,12 @@
       "title": "Sequence",
       "subject": "math",
       "summary": "Arithmetic and geometric sequences, nth term, sums, recursion, and PAT1-lite sequence problems."
+    },
+    {
+      "id": "inequality",
+      "title": "Inequality",
+      "subject": "math",
+      "summary": ""
     }
   ],
   "physics": [

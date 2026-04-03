@@ -12,6 +12,7 @@ export interface StudyTopic {
   coreConcepts: string[];
   derive: string[];
   formulas: string[];
+  traps: string[];
   sptgSet: PracticeQuestion[];
   hardSet: PracticeQuestion[];
 }
