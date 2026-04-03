@@ -65,6 +65,12 @@
 
   @if (activeTab() === 'practice') {
     <section class="practice-stack">
+      <div class="practice-toolbar">
+        <button class="ghost-btn" (click)="toggleShowAllAnswers()">
+          {{ showAllAnswers() ? 'Hide all answers' : 'Show all answers' }}
+        </button>
+      </div>
+
       <article class="card">
         <h2>SPTG style set (10)</h2>
         <div class="qa-list">
@@ -74,8 +80,18 @@
                 <span class="num">{{ i + 1 }}</span>
                 <span class="difficulty">{{ q.difficulty | titlecase }}</span>
               </div>
+
               <p class="question">{{ q.question }}</p>
-              <p class="answer"><strong>Answer:</strong> {{ q.answer }}</p>
+
+              <button
+                class="answer-toggle"
+                (click)="toggleAnswer('sptg-' + i)">
+                {{ isAnswerVisible('sptg-' + i) ? 'Hide answer' : 'Show answer' }}
+              </button>
+
+              @if (isAnswerVisible('sptg-' + i)) {
+                <p class="answer"><strong>Answer:</strong> {{ q.answer }}</p>
+              }
             </div>
           }
         </div>
@@ -90,8 +106,18 @@
                 <span class="num">{{ i + 1 }}</span>
                 <span class="difficulty hard">{{ q.difficulty | titlecase }}</span>
               </div>
+
               <p class="question">{{ q.question }}</p>
-              <p class="answer"><strong>Answer:</strong> {{ q.answer }}</p>
+
+              <button
+                class="answer-toggle"
+                (click)="toggleAnswer('hard-' + i)">
+                {{ isAnswerVisible('hard-' + i) ? 'Hide answer' : 'Show answer' }}
+              </button>
+
+              @if (isAnswerVisible('hard-' + i)) {
+                <p class="answer"><strong>Answer:</strong> {{ q.answer }}</p>
+              }
             </div>
           }
         </div>

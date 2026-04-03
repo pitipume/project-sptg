@@ -59,6 +59,21 @@ h1 {
   gap: 16px;
 }
 
+.practice-toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ghost-btn {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #111827;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
 .card {
   background: white;
   border: 1px solid #e5e7eb;
@@ -134,9 +149,20 @@ h1 {
 }
 
 .question {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: #111827;
   line-height: 1.6;
+}
+
+.answer-toggle {
+  border: none;
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .answer {
@@ -152,5 +178,13 @@ h1 {
 
   .content-grid {
     grid-template-columns: 1fr;
+  }
+
+  .practice-toolbar {
+    justify-content: stretch;
+  }
+
+  .ghost-btn {
+    width: 100%;
   }
 }
