@@ -23,20 +23,29 @@ export class TopicDetailComponent {
   readonly error = signal('');
 
   constructor() {
-    this.loadTopic();
+    this.route.paramMap.subscribe(params => {
+      const subjectParam = params.get('subject');
+      const topicId = params.get('id');
+
+      const subject = subjectParam === 'physics' ? 'physics' : 'math';
+
+      if (!topicId) {
+        this.error.set('Topic not found.');
+        this.loading.set(false);
+        return;
+      }
+
+      this.loadTopic(subject, topicId);
+    });
   }
 
-  private loadTopic(): void {
-    const subjectParam = this.route.snapshot.paramMap.get('subject');
-    const topicId = this.route.snapshot.paramMap.get('id');
-
-    const subject = subjectParam === 'physics' ? 'physics' : 'math';
-
-    if (!topicId) {
-      this.error.set('Topic not found.');
-      this.loading.set(false);
-      return;
-    }
+  private loadTopic(subject: 'math' | 'physics', topicId: string): void {
+    this.loading.set(true);
+    this.error.set('');
+    this.topic.set(null);
+    this.visibleAnswers.set({});
+    this.showAllAnswers.set(false);
+    this.activeTab.set('knowledge');
 
     this.studyDataService.getTopic(subject, topicId).subscribe({
       next: (data) => {

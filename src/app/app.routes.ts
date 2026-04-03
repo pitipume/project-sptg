@@ -17,6 +17,11 @@ export const routes: Routes = [
         import('./features/topic-detail/topic-detail.component').then(m => m.TopicDetailComponent)
     },
     {
+        path: 'mock-review',
+        loadComponent: () =>
+        import('./features/mock-review/mock-review.component').then(m => m.MockReviewComponent)
+    },
+    {
         path: '**',
         redirectTo: ''
     }

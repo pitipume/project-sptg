@@ -1,0 +1,78 @@
+@if (loading()) {
+  <section class="card">
+    <h2>Loading mock review...</h2>
+  </section>
+} @else if (error()) {
+  <section class="card">
+    <h2>Error</h2>
+    <p>{{ error() }}</p>
+  </section>
+} @else {
+  @if (strategy(); as s) {
+    <section class="card">
+      <h1>{{ s.title }}</h1>
+
+      @for (section of s.sections; track section.title) {
+        <div class="section-block">
+          <h2>{{ section.title }}</h2>
+
+          @for (item of section.items; track $index) {
+            <div class="sub-card">
+              @if (item.type) {
+                <p class="pill">{{ item.type }}</p>
+              }
+              @if (item.name) {
+                <h3>{{ item.name }}</h3>
+              }
+              @if (item.description) {
+                <p>{{ item.description }}</p>
+              }
+              @if (item.examples?.length) {
+                <h4>Examples</h4>
+                <ul>
+                  @for (ex of item.examples!; track ex) {
+                    <li>{{ ex }}</li>
+                  }
+                </ul>
+              }
+              <h4>Fix</h4>
+              <ul>
+                @for (f of item.fix; track f) {
+                  <li>{{ f }}</li>
+                }
+              </ul>
+            </div>
+          }
+        </div>
+      }
+    </section>
+  }
+
+  @if (answers(); as a) {
+    <section class="card">
+      <h2>{{ a.title }} — Math</h2>
+      <div class="qa-grid">
+        @for (item of a.math; track item.no) {
+          <div class="qa-item">
+            <strong>#{{ item.no }}</strong>
+            <span>{{ item.topic }}</span>
+            <p>{{ item.answer }}</p>
+          </div>
+        }
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>{{ a.title }} — Physics</h2>
+      <div class="qa-grid">
+        @for (item of a.physics; track item.no) {
+          <div class="qa-item">
+            <strong>#{{ item.no }}</strong>
+            <span>{{ item.topic }}</span>
+            <p>{{ item.answer }}</p>
+          </div>
+        }
+      </div>
+    </section>
+  }
+}

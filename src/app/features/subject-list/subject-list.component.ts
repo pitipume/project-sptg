@@ -1,4 +1,4 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 import { StudyDataService } from '../../core/services/study-data.service';
@@ -15,21 +15,19 @@ export class SubjectListComponent {
   private readonly route = inject(ActivatedRoute);
   private readonly studyDataService = inject(StudyDataService);
 
-  readonly subject = computed(() => {
-    const value = this.route.snapshot.paramMap.get('subject');
-    return value === 'physics' ? 'physics' : 'math';
-  });
-
-  readonly title = computed(() =>
-    this.subject() === 'math' ? 'Math Topics' : 'Physics Topics'
-  );
-
+  readonly subject = signal<'math' | 'physics'>('math');
+  readonly title = signal('Math Topics');
   readonly topics = signal<TopicIndexItem[]>([]);
   readonly loading = signal(true);
   readonly error = signal('');
 
   constructor() {
-    this.loadTopics();
+    this.route.paramMap.subscribe(params => {
+      const subjectParam = params.get('subject') === 'physics' ? 'physics' : 'math';
+      this.subject.set(subjectParam);
+      this.title.set(subjectParam === 'math' ? 'Math Topics' : 'Physics Topics');
+      this.loadTopics();
+    });
   }
 
   private loadTopics(): void {
@@ -42,8 +40,9 @@ export class SubjectListComponent {
         this.topics.set(items);
         this.loading.set(false);
       },
-      error: () => {
-        this.error.set('Failed to load topics.');
+      error: (err) => {
+        console.error('Failed to load index.json', err);
+        this.error.set(`Failed to load topics. ${err?.status ?? ''} ${err?.statusText ?? ''}`);
         this.loading.set(false);
       }
     });

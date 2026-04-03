@@ -1,0 +1,39 @@
+{
+  "id": "mock-math",
+  "title": "SPTG Mock Math 30Q",
+  "subject": "math",
+  "questions": [
+    { "q": "Solve: log₂(x) + log₂(x-2) = 3", "a": "x = 4", "topic": "log" },
+    { "q": "If sinθ = 3/5, find cosθ", "a": "4/5", "topic": "trig" },
+    { "q": "A:B = 2:3 and total is 50. Find A.", "a": "20", "topic": "ratio" },
+    { "q": "Increase 200 by 15%", "a": "230", "topic": "percent" },
+    { "q": "Solve inequality: 2x - 3 > 5", "a": "x > 4", "topic": "inequality" },
+    { "q": "Find next term: 2, 6, 18, ?", "a": "54", "topic": "sequence" },
+    { "q": "Probability of getting head in fair coin", "a": "1/2", "topic": "probability" },
+    { "q": "Mean of 2,4,6,8", "a": "5", "topic": "statistics" },
+    { "q": "Solve: x² - 5x + 6 = 0", "a": "2,3", "topic": "algebra" },
+    { "q": "Area of triangle base 10 height 5", "a": "25", "topic": "geometry" },
+
+    { "q": "A number increases 20% then decreases 20%. Net change?", "a": "-4%", "topic": "percent" },
+    { "q": "If A:B = 3:4 and B:C = 2:5, find A:C", "a": "6:20 = 3:10", "topic": "ratio" },
+    { "q": "Solve: log₄(x) = 2", "a": "16", "topic": "log" },
+    { "q": "tanθ = 1, θ in first quadrant", "a": "45°", "topic": "trig" },
+    { "q": "Sum of first 10 natural numbers", "a": "55", "topic": "sequence" },
+    { "q": "Probability of rolling 3 on die", "a": "1/6", "topic": "probability" },
+    { "q": "Median of 1,2,3,4,5", "a": "3", "topic": "statistics" },
+    { "q": "Distance between (0,0) and (3,4)", "a": "5", "topic": "geometry" },
+    { "q": "Solve: 3x = 12", "a": "4", "topic": "algebra" },
+    { "q": "If 30% of x = 60, find x", "a": "200", "topic": "percent" },
+
+    { "q": "Solve: log₂(x² -1) = 3", "a": "±3 (x>1 → 3)", "topic": "log" },
+    { "q": "If sin²θ + cos²θ = ?", "a": "1", "topic": "trig" },
+    { "q": "A mixture 20% and 50% gives 30%. Ratio?", "a": "2:1", "topic": "mixture" },
+    { "q": "Arithmetic sequence: a=2, d=3, find 10th term", "a": "29", "topic": "sequence" },
+    { "q": "Probability of even number on die", "a": "1/2", "topic": "probability" },
+    { "q": "Std deviation simple concept", "a": "spread measure", "topic": "statistics" },
+    { "q": "Circle area r=7", "a": "49π", "topic": "geometry" },
+    { "q": "Solve: x/2 + x/3 = 5", "a": "6", "topic": "algebra" },
+    { "q": "If price drops 25% from 100", "a": "75", "topic": "percent" },
+    { "q": "Ratio change after adding constant", "a": "equation setup", "topic": "ratio" }
+  ]
+}

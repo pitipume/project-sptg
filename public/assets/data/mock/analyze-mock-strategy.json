@@ -1,0 +1,155 @@
+{
+  "id": "analyze-mock-strategy",
+  "title": "Analyze Mock Mistakes + Fix Strategy",
+  "sections": [
+    {
+      "title": "Mistake Types",
+      "items": [
+        {
+          "type": "Type A",
+          "name": "Concept Gap",
+          "description": "You do not know how to start or which formula/concept to use.",
+          "examples": [
+            "Cannot set up log equation",
+            "Cannot draw force balance",
+            "Do not know whether to use probability or counting"
+          ],
+          "fix": [
+            "Review core concept",
+            "Redo 3 to 5 standard examples",
+            "Write 1-line trigger rule for that topic"
+          ]
+        },
+        {
+          "type": "Type B",
+          "name": "Careless / Execution Error",
+          "description": "You know the method but make calculation, sign, unit, or reading mistakes.",
+          "examples": [
+            "Wrong sign in physics",
+            "Forgot domain in logarithm",
+            "Used wrong unit conversion"
+          ],
+          "fix": [
+            "Use a mini checklist before final answer",
+            "Recheck units and sign",
+            "Circle trap words in the question"
+          ]
+        },
+        {
+          "type": "Type C",
+          "name": "Trap Error",
+          "description": "You know the topic but fall for a common exam trap.",
+          "examples": [
+            "Average speed taken as average of two speeds",
+            "Increase 20% then decrease 20% assumed zero net effect",
+            "Echo distance not divided by 2"
+          ],
+          "fix": [
+            "Memorize trap patterns by topic",
+            "Tag each wrong question with trap label",
+            "Practice similar trap questions immediately"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Math Fix Strategy",
+      "items": [
+        {
+          "name": "Percent / Ratio / Mixture",
+          "fix": [
+            "Always identify base quantity first",
+            "Use multiplier for repeated percentage change",
+            "For mixture, track pure substance not only total volume"
+          ]
+        },
+        {
+          "name": "Log / Algebra",
+          "fix": [
+            "Check domain before and after solving",
+            "Convert bases only when helpful",
+            "Combine logs before exponent conversion"
+          ]
+        },
+        {
+          "name": "Geometry / Trig",
+          "fix": [
+            "Draw a quick diagram",
+            "Label opposite-adjacent-hypotenuse",
+            "Check whether angle is in degrees or radians"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Physics Fix Strategy",
+      "items": [
+        {
+          "name": "Kinematics",
+          "fix": [
+            "List u, v, a, t, s first",
+            "Do not use constant-acceleration formulas unless acceleration is constant",
+            "Use graph slope/area carefully"
+          ]
+        },
+        {
+          "name": "Force / Momentum / Energy",
+          "fix": [
+            "Draw FBD before writing equations",
+            "Use sign convention consistently",
+            "Check whether momentum or energy is conserved"
+          ]
+        },
+        {
+          "name": "Fluid / Electricity / Waves / Heat",
+          "fix": [
+            "Write main formula first",
+            "Check units carefully",
+            "For echo and heat mix problems, watch hidden factor and equilibrium condition"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2-Pass Exam Strategy",
+      "items": [
+        {
+          "name": "Pass 1",
+          "fix": [
+            "Do easy and medium questions first",
+            "Skip any question that blocks you for more than 60 to 90 seconds"
+          ]
+        },
+        {
+          "name": "Pass 2",
+          "fix": [
+            "Return to marked questions",
+            "Use elimination and trap awareness",
+            "Do not let one hard question kill time"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fast Final Checklist",
+      "items": [
+        {
+          "name": "Math",
+          "fix": [
+            "Check domain",
+            "Check unit",
+            "Check whether answer is reasonable"
+          ]
+        },
+        {
+          "name": "Physics",
+          "fix": [
+            "Check direction/sign",
+            "Check formula context",
+            "Check final unit"
+          ]
+        }
+      ]
+    }
+  ]
+}

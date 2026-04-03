@@ -1,0 +1,39 @@
+{
+  "id": "mock-physics",
+  "title": "SPTG Mock Physics 30Q",
+  "subject": "physics",
+  "questions": [
+    { "q": "v = u + at, u=0, a=2, t=5", "a": "10 m/s", "topic": "kinematics" },
+    { "q": "Force on 2kg, a=3", "a": "6 N", "topic": "force" },
+    { "q": "KE of 2kg at 4m/s", "a": "16 J", "topic": "energy" },
+    { "q": "Momentum 3kg at 5m/s", "a": "15", "topic": "momentum" },
+    { "q": "Pressure 100N/10m²", "a": "10 Pa", "topic": "fluid" },
+    { "q": "Ohm law V=IR, I=2, R=5", "a": "10V", "topic": "electricity" },
+    { "q": "v=fλ, f=5, λ=2", "a": "10 m/s", "topic": "waves" },
+    { "q": "Q=mcΔT simple", "a": "depends", "topic": "heat" },
+    { "q": "Free fall 3s g=10", "a": "30 m/s", "topic": "kinematics" },
+    { "q": "Weight 5kg", "a": "50 N", "topic": "force" },
+
+    { "q": "Work 10N over 5m", "a": "50 J", "topic": "energy" },
+    { "q": "Impulse 10N for 2s", "a": "20 Ns", "topic": "momentum" },
+    { "q": "Buoyant force concept", "a": "weight displaced fluid", "topic": "fluid" },
+    { "q": "Series resistance 2+3", "a": "5Ω", "topic": "electricity" },
+    { "q": "Echo 2s speed 340", "a": "340m", "topic": "waves" },
+    { "q": "Heat 1kg water ΔT=10", "a": "42000J", "topic": "heat" },
+    { "q": "Relative speed 10+20", "a": "30", "topic": "kinematics" },
+    { "q": "Friction μN", "a": "formula", "topic": "force" },
+    { "q": "PE mgh", "a": "formula", "topic": "energy" },
+    { "q": "Momentum conserved?", "a": "yes if no external force", "topic": "momentum" },
+
+    { "q": "Acceleration slope v-t", "a": "dv/dt", "topic": "kinematics" },
+    { "q": "Incline mg sinθ", "a": "parallel component", "topic": "force" },
+    { "q": "Energy conservation", "a": "KE+PE constant", "topic": "energy" },
+    { "q": "Collision stick formula", "a": "m1u1+m2u2=(m1+m2)v", "topic": "momentum" },
+    { "q": "Pressure depth", "a": "ρgh", "topic": "fluid" },
+    { "q": "Parallel circuit", "a": "same V", "topic": "electricity" },
+    { "q": "Sound needs medium", "a": "yes", "topic": "waves" },
+    { "q": "Latent heat", "a": "Q=mL", "topic": "heat" },
+    { "q": "Power P=VI", "a": "formula", "topic": "electricity" },
+    { "q": "Graph area v-t", "a": "displacement", "topic": "kinematics" }
+  ]
+}
