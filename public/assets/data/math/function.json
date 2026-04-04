@@ -1,0 +1,204 @@
+{
+  "id": "function",
+  "title": "Function",
+  "subject": "math",
+  "summary": [
+    "A function maps each valid input to exactly one output.",
+    "SPTG often tests function evaluation, domain, composition, inverse, piecewise functions, and graph shifts.",
+    "The hardest part is usually interpretation, not calculation."
+  ],
+  "coreConcepts": [
+    "A function gives one output for each input.",
+    "Domain is the set of all valid x-values.",
+    "Range is the set of all possible outputs.",
+    "For rational functions, denominator cannot be zero.",
+    "For square roots, the expression inside must be at least zero.",
+    "For logarithms, the expression inside must be greater than zero.",
+    "Composition means substituting one function into another.",
+    "Inverse means reversing the input-output process.",
+    "Horizontal graph shifts behave in the opposite direction inside parentheses.",
+    "Vertical graph shifts behave in the same direction outside the function."
+  ],
+  "derive": [
+    "If y = f(x), then finding f(a) means substituting x = a.",
+    "For inverse, set y = f(x), switch x and y, then solve for y.",
+    "For composition, (f ∘ g)(x) = f(g(x)).",
+    "For domain, combine all restrictions from denominator, square root, and logarithm.",
+    "For graph shifts: f(x-a) shifts right by a, and f(x+a) shifts left by a."
+  ],
+  "formulas": [
+    "(f ∘ g)(x) = f(g(x))",
+    "(g ∘ f)(x) = g(f(x))",
+    "If f(x) = ax + b, then f^(-1)(x) = (x - b)/a",
+    "Domain rule for denominator: denominator ≠ 0",
+    "Domain rule for square root: inside ≥ 0",
+    "Domain rule for logarithm: inside > 0",
+    "f(x-a) = shift right by a",
+    "f(x+a) = shift left by a",
+    "f(x)+a = shift up by a",
+    "f(x)-a = shift down by a"
+  ],
+  "traps": [
+    "For horizontal shifts, inside the function is opposite direction.",
+    "Do not forget domain restrictions before solving.",
+    "Inverse may not exist as a function unless the original function is one-to-one on the chosen domain.",
+    "For piecewise functions, always check which condition the input satisfies.",
+    "Composition order matters: f(g(x)) is usually not the same as g(f(x))."
+  ],
+  "sptgSet": [
+    {
+      "question": "If f(x) = 2x + 1, find f(3).",
+      "answer": "7",
+      "difficulty": "basic"
+    },
+    {
+      "question": "If f(x) = x^2, find f(-2).",
+      "answer": "4",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the domain of f(x) = 1/(x - 3).",
+      "answer": "x ≠ 3",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the domain of f(x) = √(x - 5).",
+      "answer": "x ≥ 5",
+      "difficulty": "basic"
+    },
+    {
+      "question": "Find the domain of f(x) = log(x + 2).",
+      "answer": "x > -2",
+      "difficulty": "basic"
+    },
+    {
+      "question": "If f(x) = x + 2 and g(x) = 2x, find f(g(2)).",
+      "answer": "6",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If f(x) = 3x, find the inverse function.",
+      "answer": "f^(-1)(x) = x/3",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the shape of the graph of y = |x| ?",
+      "answer": "V-shape",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If f(x) = x^2 + 1, find f(2).",
+      "answer": "5",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "If f(x) = x - 4, find f(0).",
+      "answer": "-4",
+      "difficulty": "advanced"
+    }
+  ],
+  "hardSet": [
+    {
+      "question": "Find the domain of f(x) = √(2x - 4).",
+      "answer": "x ≥ 2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the domain of f(x) = log(3 - x).",
+      "answer": "x < 3",
+      "difficulty": "hard"
+    },
+    {
+      "question": "If f(x) = 2x + 3, find x when f(x) = 7.",
+      "answer": "2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "If f(x) = x + 1 and g(x) = x^2, find f(g(x)).",
+      "answer": "x^2 + 1",
+      "difficulty": "hard"
+    },
+    {
+      "question": "If f(x) = x + 1 and g(x) = x^2, find g(f(x)).",
+      "answer": "(x + 1)^2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Find the inverse of f(x) = 2x + 3.",
+      "answer": "f^(-1)(x) = (x - 3)/2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "If f(x) = x^2, find all x such that f(x) = 9.",
+      "answer": "x = 3 or x = -3",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Given f(x) = { x^2 if x ≥ 0, -x if x < 0 }, find f(-2).",
+      "answer": "2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "If f(x) = x^2, write f(x - 2).",
+      "answer": "(x - 2)^2",
+      "difficulty": "hard"
+    },
+    {
+      "question": "If f(x) = x + 1, find f(f(x)).",
+      "answer": "x + 2",
+      "difficulty": "hard"
+    }
+  ],
+  "pat1Set": [
+    {
+      "question": "Find the domain of f(x) = √(x^2 - 4).",
+      "answer": "x ≤ -2 or x ≥ 2",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Find the domain of f(x) = 1/(x^2 - 1).",
+      "answer": "x ≠ 1 and x ≠ -1",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Find the domain of f(x) = log(x^2 - 1).",
+      "answer": "x < -1 or x > 1",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "If f(x) = x^2 - 4x + 3, find the minimum value.",
+      "answer": "-1 at x = 2",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "If f(x) = |x - 2|, find x when f(x) = 3.",
+      "answer": "x = 5 or x = -1",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "If f(x) = x^2, find all x such that f(x) = 16.",
+      "answer": "x = 4 or x = -4",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Find the inverse of f(x) = (x - 1)/(x + 1).",
+      "answer": "f^(-1)(x) = (x + 1)/(1 - x)",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Solve f(g(x)) = g(f(x)) given unspecified functions f and g.",
+      "answer": "Need the definitions of both f and g first",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "State the condition for continuity of a piecewise function at x = a.",
+      "answer": "Left limit = right limit = function value",
+      "difficulty": "very hard"
+    },
+    {
+      "question": "Reflect the graph of y = x^2 across the x-axis.",
+      "answer": "y = -x^2",
+      "difficulty": "very hard"
+    }
+  ]
+}

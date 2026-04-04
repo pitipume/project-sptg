@@ -65,6 +65,12 @@
       "title": "Inequality",
       "subject": "math",
       "summary": ""
+    },
+    {
+      "id": "function",
+      "title": "Function",
+      "subject": "math",
+      "summary": "Function value, domain, composition, inverse, piecewise, and graph shifts."
     }
   ],
   "physics": [
